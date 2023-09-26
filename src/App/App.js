@@ -7,6 +7,8 @@ import AnimalCard from "../AnimalCard/AnimalCard";
 import HomePage from "../HomePage/HomePage";
 import Timeline from "../Timeline/Timeline";
 import MentionsLegales from "../Footer/MentionsLegales/MentionsLegales";
+
+import ScrollToTopButton from "../ScrollToTopButton/ScrollToTopButton";
 import "./App.scss";
 
 import data from "../Data/data";
@@ -27,6 +29,7 @@ function App() {
           <Footer />
         </div>
       </HashRouter>
+      <ScrollToTopButton />
     </div>
   );
 }

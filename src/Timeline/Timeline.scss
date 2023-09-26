@@ -32,6 +32,11 @@
       display: block;
     }
 
+    p.date {
+      color: #1885eb;
+      font-weight: 700;
+    }
+
     /* Responsive styles using em, rem, vh, and vw units */
     @media screen and (max-width: 768px) {
       font-size: 0.8rem;

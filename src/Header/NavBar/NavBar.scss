@@ -1,10 +1,12 @@
 .navbar {
   background-color: #333;
+
   ul.nav-list {
     list-style: none;
     padding: 0;
     margin: 0;
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-around;
     align-items: center;
 
@@ -13,8 +15,8 @@
       padding: 1rem;
 
       &:hover > .subnav {
-        display: flex; /* Modifier l'affichage en flex */
-        flex-direction: column; /* Afficher les sous-menus en colonnes */
+        display: flex;
+        flex-direction: column;
       }
 
       a {

@@ -19,10 +19,9 @@ const Timeline = () => {
                 <span className="time">Époque</span>
               </th>
               <th>
-                <span className="time">Étage</span>
+                <span className="time">Étage</span> <br />
+                <span className="time">Âge (Ma)</span>
               </th>
-
-              <th>Âge (Ma)</th>
             </tr>
 
             <tr>
@@ -36,84 +35,132 @@ const Timeline = () => {
             </tr>
             <tr>
               <td rowSpan="3">Holocène</td>
-              <td>Méghalayen</td> <td>0,0042</td>
+              <td>
+                Méghalayen <br /> <p className="date">0,0042</p>
+              </td>
             </tr>
             <tr>
-              <td>Northgrippien</td> <td>0,0082</td>
+              <td>
+                Northgrippien <br /> <p className="date">0,0082</p>
+              </td>
             </tr>
             <tr>
-              <td>Greenlandien</td> <td>0,0117</td>
+              <td>
+                Greenlandien <br /> <p className="date">0,0117</p>
+              </td>
             </tr>
             <tr>
               <td rowSpan="4">Pléistocène</td>
-              <td>Pléistocène supérieur</td> <td>0,126</td>
+              <td>
+                Pléistocène supérieur <br /> <p className="date">0,126</p>
+              </td>
             </tr>
             <tr>
-              <td>Pléistocène moyen</td> <td>0,781</td>
+              <td>
+                Pléistocène moyen <br /> <p className="date">0,781</p>
+              </td>
             </tr>
             <tr>
-              <td>Calabrien</td> <td>1,80</td>
+              <td>
+                Calabrien <br /> <p className="date">1,80</p>
+              </td>
             </tr>
             <tr>
-              <td>Gélasien</td> <td>2,58</td>
+              <td>
+                Gélasien <br /> <p className="date">2,58</p>
+              </td>
             </tr>
             <tr>
               <td rowSpan="8">Néogène</td>
               <td rowSpan="2">Pliocène</td>
-              <td>Plaisancien</td> <td>3,600</td>
+              <td>
+                Plaisancien <br /> <p className="date">3,600</p>
+              </td>
             </tr>
             <tr>
-              <td>Zancléen</td> <td>5,333</td>
+              <td>
+                Zancléen <br /> <p className="date">5,333</p>
+              </td>
             </tr>
             <tr>
               <td rowSpan="6">Miocène</td>
-              <td>Messinien</td> <td>7,246</td>
+              <td>
+                Messinien <br /> <p className="date">7,246</p>
+              </td>
             </tr>
             <tr>
-              <td>Tortonien</td> <td>11,63</td>
+              <td>
+                Tortonien <br /> <p className="date">11,63</p>
+              </td>
             </tr>
             <tr>
-              <td>Serravallien</td> <td>13,82</td>
+              <td>
+                Serravallien <br /> <p className="date">13,82</p>
+              </td>
             </tr>
             <tr>
-              <td>Langhien</td> <td>15,97</td>
+              <td>
+                Langhien <br /> <p className="date">15,97</p>
+              </td>
             </tr>
             <tr>
-              <td>Burdigalien</td> <td>20,44</td>
+              <td>
+                Burdigalien <br /> <p className="date">20,44</p>
+              </td>
             </tr>
             <tr>
-              <td>Aquitanien</td> <td>23,03</td>
+              <td>
+                Aquitanien <br /> <p className="date">23,03</p>
+              </td>
             </tr>
             <tr>
               <td rowSpan="9">Paléogène</td>
               <td rowSpan="2">Oligocène</td>
-              <td>Chattien</td> <td>28,1</td>
+              <td>
+                Chattien <br /> <p className="date">28,1</p>
+              </td>
             </tr>
             <tr>
-              <td>Rupélien</td> <td>33,9</td>
+              <td>
+                Rupélien <br /> <p className="date">33,9</p>
+              </td>
             </tr>
             <tr>
               <td rowSpan="4">Éocène</td>
-              <td>Priabonien</td> <td>37,8</td>
+              <td>
+                Priabonien <br /> <p className="date">37,8</p>
+              </td>
             </tr>
             <tr>
-              <td>Bartonien</td> <td>41,2</td>
+              <td>
+                Bartonien <br /> <p className="date">41,2</p>
+              </td>
             </tr>
             <tr>
-              <td>Lutétien</td> <td>47,8</td>
+              <td>
+                Lutétien <br /> <p className="date">47,8</p>
+              </td>
             </tr>
             <tr>
-              <td>Yprésien</td> <td>56,0</td>
+              <td>
+                Yprésien <br /> <p className="date">56,0</p>
+              </td>
             </tr>
             <tr>
               <td rowSpan="3">Paléocène</td>
-              <td>Thanétien</td> <td>59,2</td>
+              <td>
+                Thanétien <br /> <p className="date">59,2</p>
+              </td>
             </tr>
             <tr>
-              <td>Sélandien</td> <td>61,6</td>
+              <td>
+                Sélandien <br /> <p className="date">61,6</p>
+              </td>
             </tr>
             <tr>
-              <td>Danien</td> <td>66,0</td>
+              <td>
+                Danien <br /> <p className="date">66,0</p>
+              </td>
             </tr>
             <tr>
               <td rowSpan="30">
@@ -124,107 +171,163 @@ const Timeline = () => {
               </td>
               <td rowSpan="12">Crétacé</td>
               <td rowSpan="6">Supérieur</td>
-              <td>Maastrichtien</td> <td>72,1± 0,2</td>
+              <td>
+                Maastrichtien <br /> <p className="date">72,1± 0,2</p>
+              </td>
             </tr>
             <tr>
-              <td>Campanien</td> <td>83,6± 0,2</td>
+              <td>
+                Campanien <br /> <p className="date">83,6± 0,2</p>
+              </td>
             </tr>
             <tr>
-              <td>Santonien</td> <td>86,3± 0,5</td>
+              <td>
+                Santonien <br /> <p className="date">86,3± 0,5</p>
+              </td>
             </tr>
             <tr>
-              <td>Coniacien</td> <td>89,8± 0,3</td>
+              <td>
+                Coniacien <br /> <p className="date">89,8± 0,3</p>
+              </td>
             </tr>
             <tr>
-              <td>Turonien</td> <td>93,9</td>
+              <td>
+                Turonien <br /> <p className="date">93,9</p>
+              </td>
             </tr>
             <tr>
-              <td>Cénomanien</td> <td>100,5</td>
+              <td>
+                Cénomanien <br /> <p className="date">100,5</p>
+              </td>
             </tr>
             <tr>
               <td rowSpan="6">Inférieur</td>
-              <td>Albien</td> <td>≃113,0</td>
+              <td>
+                Albien <br /> <p className="date">≃113,0</p>
+              </td>
             </tr>
             <tr>
-              <td>Aptien</td> <td>≃125,0</td>
+              <td>
+                Aptien <br /> <p className="date">≃125,0</p>
+              </td>
             </tr>
             <tr>
-              <td>Barrémien</td> <td>≃129,4</td>
+              <td>
+                Barrémien <br /> <p className="date">≃129,4</p>
+              </td>
             </tr>
             <tr>
-              <td>Hauterivien</td> <td>≃132,9</td>
+              <td>
+                Hauterivien <br /> <p className="date">≃132,9</p>
+              </td>
             </tr>
             <tr>
-              <td>Valanginien</td> <td>≃139,8</td>
+              <td>
+                Valanginien <br /> <p className="date">≃139,8</p>
+              </td>
             </tr>
             <tr>
-              <td>Berriasien</td> <td>≃145,0</td>
+              <td>
+                Berriasien <br /> <p className="date">≃145,0</p>
+              </td>
             </tr>
             <tr>
               <td rowSpan="11">Jurassique</td>
               <td rowSpan="3">Supérieur</td>
-              <td>Tithonien</td> <td>152,1± 0,9</td>
+              <td>
+                Tithonien <br /> <p className="date">152,1± 0,9</p>
+              </td>
             </tr>
             <tr>
-              <td>Kimméridgien</td> <td>157,3± 1,0</td>
+              <td>
+                Kimméridgien <br /> <p className="date">157,3± 1,0</p>
+              </td>
             </tr>
             <tr>
-              <td>Oxfordien</td> <td>163,5± 1,0</td>
+              <td>
+                Oxfordien <br /> <p className="date">163,5± 1,0</p>
+              </td>
             </tr>
             <tr>
               <td rowSpan="4">Moyen</td>
-              <td>Callovien</td> <td>166,1± 1,2</td>
+              <td>
+                Callovien <br /> <p className="date">166,1± 1,2</p>
+              </td>
             </tr>
             <tr>
-              <td>Bathonien</td> <td>168,3± 1,3</td>
+              <td>
+                Bathonien <br /> <p className="date">168,3± 1,3</p>
+              </td>
             </tr>
             <tr>
-              <td>Bajocien</td> <td>170,3± 1,4</td>
+              <td>
+                Bajocien <br /> <p className="date">170,3± 1,4</p>
+              </td>
             </tr>
             <tr>
-              <td>Aalénien</td> <td>174,1± 1,0</td>
+              <td>
+                Aalénien <br /> <p className="date">174,1± 1,0</p>
+              </td>
             </tr>
             <tr>
               <td rowSpan="4">Inférieur</td>
-              <td>Toarcien</td> <td>182,7± 0,7</td>
+              <td>
+                Toarcien <br /> <p className="date">182,7± 0,7</p>
+              </td>
             </tr>
             <tr>
-              <td>Pliensbachien</td> <td>190,8± 1,0</td>
+              <td>
+                Pliensbachien <br /> <p className="date">190,8± 1,0</p>
+              </td>
             </tr>
             <tr>
-              <td>Sinémurien</td> <td>199,3± 0,3</td>
+              <td>
+                Sinémurien <br /> <p className="date">199,3± 0,3</p>
+              </td>
             </tr>
             <tr>
-              <td>Hettangien</td> <td>201,3± 0,2</td>
+              <td>
+                Hettangien <br /> <p className="date">201,3± 0,2</p>
+              </td>
             </tr>
             <tr>
               <td rowSpan="7">Trias</td>
               <td rowSpan="3">Supérieur</td>
-              <td>Rhétien</td> <td>≃208,5</td>
+              <td>
+                Rhétien <br /> <p className="date">≃208,5</p>
+              </td>
             </tr>
             <tr>
-              <td>Norien</td> <td>≃227</td>
+              <td>
+                Norien <br /> <p className="date">≃227</p>
+              </td>
             </tr>
             <tr>
-              <td>Carnien</td> <td>≃237</td>
+              <td>
+                Carnien <br /> <p className="date">≃237</p>
+              </td>
             </tr>
             <tr>
               <td rowSpan="2">Moyen</td>
-              <td>Ladinien</td>
-              <td>≃242</td>
+              <td>
+                Ladinien <br /> <p className="date">≃242</p>
+              </td>
             </tr>
             <tr>
-              <td>Anisien</td>
-              <td>247,2</td>
+              <td>
+                Anisien <br /> <p className="date">247,2</p>
+              </td>
             </tr>
             <tr>
               <td rowSpan="2">Inférieur</td>
-              <td>Olénékien</td>
-              <td>251,2</td>
+              <td>
+                Olénékien <br /> <p className="date">251,2</p>
+              </td>
             </tr>
             <tr>
-              <td>Indusien</td>
-              <td>252,17± 0,06</td>
+              <td>
+                Indusien <br /> <p className="date">252,17± 0,06</p>
+              </td>
             </tr>
             <tr>
               <td rowSpan="48">
@@ -236,221 +339,268 @@ const Timeline = () => {
               </td>
               <td rowSpan="9">Permien</td>
               <td rowSpan="2">Lopingien</td>
-              <td>Changhsingien</td>
-              <td>254,14± 0,07</td>
+              <td>
+                Changhsingien <br /> <p className="date">254,14± 0,07</p>
+              </td>
             </tr>
             <tr>
-              <td>Wuchiapingien</td>
-              <td>259,8± 0,4</td>
+              <td>
+                Wuchiapingien <br /> <p className="date">259,8± 0,4</p>
+              </td>
             </tr>
             <tr>
               <td rowSpan="3">Guadalupien</td>
-              <td>Capitanien</td>
-              <td>265,1± 0,4</td>
+              <td>
+                Capitanien <br /> <p className="date">265,1± 0,4</p>
+              </td>
             </tr>
             <tr>
-              <td>Wordien</td>
-              <td>268,8± 0,5</td>
+              <td>
+                Wordien <br /> <p className="date">268,8± 0,5</p>
+              </td>
             </tr>
             <tr>
-              <td>Roadien</td>
-              <td>272,95± 0,11</td>
+              <td>
+                Roadien <br /> <p className="date">272,95± 0,11</p>
+              </td>
             </tr>
             <tr>
               <td rowSpan="4">Cisuralien</td>
-              <td>Kungurien</td>
-              <td>283,5± 0,6</td>
+              <td>
+                Kungurien <br /> <p className="date">283,5± 0,6</p>
+              </td>
             </tr>
             <tr>
-              <td>Artinskien</td>
-              <td>290,1± 0,26</td>
+              <td>
+                Artinskien <br /> <p className="date">290,1± 0,26</p>
+              </td>
             </tr>
             <tr>
-              <td>Sakmarien</td>
-              <td>295,0± 0,18</td>
+              <td>
+                Sakmarien <br /> <p className="date">295,0± 0,18</p>
+              </td>
             </tr>
             <tr>
-              <td>Assélien</td>
-              <td>298,9± 0,15</td>
+              <td>
+                Assélien <br /> <p className="date">298,9± 0,15</p>
+              </td>
             </tr>
             <tr>
               <td rowSpan="7">Carbonifère</td>
               <td rowSpan="4">Pennsylvanien</td>
-              <td>Gzhélien</td>
-              <td>303,7± 0,1</td>
+              <td>
+                Gzhélien <br /> <p className="date">303,7± 0,1</p>
+              </td>
             </tr>
             <tr>
-              <td>Kasimovien</td>
-              <td>307,0± 0,1</td>
+              <td>
+                Kasimovien <br /> <p className="date">307,0± 0,1</p>
+              </td>
             </tr>
             <tr>
-              <td>Moscovien</td>
-              <td>315,2± 0,2</td>
+              <td>
+                Moscovien <br /> <p className="date">315,2± 0,2</p>
+              </td>
             </tr>
             <tr>
-              <td>Bachkirien</td>
-              <td>323,2± 0,4</td>
+              <td>
+                Bachkirien <br /> <p className="date">323,2± 0,4</p>
+              </td>
             </tr>
             <tr>
               <td rowSpan="3">Mississippien</td>
-              <td>Serpukhovien</td>
-              <td>330,9± 0,2</td>
+              <td>
+                Serpukhovien <br /> <p className="date">330,9± 0,2</p>
+              </td>
             </tr>
             <tr>
-              <td>Viséen</td>
-              <td>346,7± 0,4</td>
+              <td>
+                Viséen <br /> <p className="date">346,7± 0,4</p>
+              </td>
             </tr>
             <tr>
-              <td>Tournaisien</td>
-              <td>358,9± 0,4</td>
+              <td>
+                Tournaisien <br /> <p className="date">358,9± 0,4</p>
+              </td>
             </tr>
             <tr>
               <td rowSpan="7">Dévonien</td>
               <td rowSpan="2">Supérieur</td>
-              <td>Famennien</td>
-              <td>372,2± 1,6</td>
+              <td>
+                Famennien <br /> <p className="date">372,2± 1,6</p>
+              </td>
             </tr>
             <tr>
-              <td>Frasnien</td>
-              <td>382,7± 1,6</td>
+              <td>
+                Frasnien <br /> <p className="date">382,7± 1,6</p>
+              </td>
             </tr>
             <tr>
               <td rowSpan="2">Moyen</td>
-              <td>Givétien</td>
-              <td>387,7± 0,8</td>
+              <td>
+                Givétien <br /> <p className="date">387,7± 0,8</p>
+              </td>
             </tr>
             <tr>
-              <td>Eifélien</td>
-              <td>393,3± 1,2</td>
+              <td>
+                Eifélien <br /> <p className="date">393,3± 1,2</p>
+              </td>
             </tr>
             <tr>
               <td rowSpan="3">Inférieur</td>
-              <td>Emsien</td>
-              <td>407,6± 2,6</td>
+              <td>
+                Emsien <br /> <p className="date">407,6± 2,6</p>
+              </td>
             </tr>
             <tr>
-              <td>Praguien</td>
-              <td>410,8± 2,8</td>
+              <td>
+                Praguien <br /> <p className="date">410,8± 2,8</p>
+              </td>
             </tr>
             <tr>
-              <td>Lochkovien</td>
-              <td>419,2± 3,2</td>
+              <td>
+                Lochkovien <br /> <p className="date">419,2± 3,2</p>
+              </td>
             </tr>
             <tr>
               <td rowSpan="8">Silurien</td>
               <td>Pridoli</td>
-              <td>Pridolien</td>
-              <td>423,0± 2,3</td>
+              <td>
+                Pridolien <br /> <p className="date">423,0± 2,3</p>
+              </td>
             </tr>
             <tr>
               <td rowSpan="2">Ludlow</td>
-              <td>Ludfordien</td>
-              <td>425,6± 0,9</td>
+              <td>
+                Ludfordien <br /> <p className="date">425,6± 0,9</p>
+              </td>
             </tr>
             <tr>
-              <td>Gorstien</td>
-              <td>427,4± 0,5</td>
+              <td>
+                Gorstien <br /> <p className="date">427,4± 0,5</p>
+              </td>
             </tr>
             <tr>
               <td rowSpan="2">Wenlock</td>
-              <td>Homérien</td>
-              <td>430,5± 0,7</td>
+              <td>
+                Homérien <br /> <p className="date">430,5± 0,7</p>
+              </td>
             </tr>
             <tr>
-              <td>Sheinwoodien</td>
-              <td>433,4± 0,8</td>
+              <td>
+                Sheinwoodien <br /> <p className="date">433,4± 0,8</p>
+              </td>
             </tr>
             <tr>
               <td rowSpan="3">Llandovery</td>
-              <td>Télychien</td>
-              <td>438,5± 1,1</td>
+              <td>
+                Télychien <br /> <p className="date">438,5± 1,1</p>
+              </td>
             </tr>
             <tr>
-              <td>Aéronien</td>
-              <td>440,8± 1,2</td>
+              <td>
+                Aéronien <br /> <p className="date">440,8± 1,2</p>
+              </td>
             </tr>
             <tr>
-              <td>Rhuddanien</td>
-              <td>443,8± 1,5</td>
+              <td>
+                Rhuddanien <br /> <p className="date">443,8± 1,5</p>
+              </td>
             </tr>
             <tr>
               <td rowSpan="7">Ordovicien</td>
               <td rowSpan="3">Supérieur</td>
-              <td>Hirnantien</td>
-              <td>445,2± 1,4</td>
+              <td>
+                Hirnantien <br /> <p className="date">445,2± 1,4</p>
+              </td>
             </tr>
 
             <tr>
-              <td>Katien</td>
-              <td>453,0± 0,7</td>
+              <td>
+                Katien <br /> <p className="date">453,0± 0,7</p>
+              </td>
             </tr>
             <tr>
-              <td>Sandbien</td>
-              <td>458,4± 0,9</td>
+              <td>
+                Sandbien <br /> <p className="date">458,4± 0,9</p>
+              </td>
             </tr>
             <tr>
               <td rowSpan="2">Moyen</td>
-              <td>Darriwilien</td>
-              <td>467,3± 1,1</td>
+              <td>
+                Darriwilien <br /> <p className="date">467,3± 1,1</p>
+              </td>
             </tr>
             <tr>
-              <td>Dapingien</td>
-              <td>470,0± 1,4</td>
+              <td>
+                Dapingien <br /> <p className="date">470,0± 1,4</p>
+              </td>
             </tr>
             <tr>
               <td rowSpan="2">Inférieur</td>
-              <td>Floien</td>
-              <td>477,7± 1,4</td>
+              <td>
+                Floien <br /> <p className="date">477,7± 1,4</p>
+              </td>
             </tr>
             <tr>
-              <td>Trémadocien</td>
-              <td>485,4± 1,9</td>
+              <td>
+                Trémadocien <br /> <p className="date">485,4± 1,9</p>
+              </td>
             </tr>
             <tr>
               <td rowSpan="10">Cambrien</td>
               <td rowSpan="3">Furongien</td>
-              <td>Étage 10</td>
-              <td>≃489,5</td>
+              <td>
+                Étage 10 <br /> <p className="date">≃489,5</p>
+              </td>
             </tr>
             <tr>
-              <td>Jiangshanien</td>
-
-              <td>≃494</td>
+              <td>
+                Jiangshanien <br /> <p className="date">≃494</p>
+              </td>
             </tr>
             <tr>
-              <td>Paibien</td>
-              <td>≃497</td>
+              <td>
+                Paibien <br /> <p className="date">≃497</p>
+              </td>
             </tr>
             <tr>
               <td rowSpan="3">Miaolingien</td>
-              <td>Guzhangien</td>
-              <td>≃500,5</td>
+              <td>
+                Guzhangien <br /> <p className="date">≃500,5</p>
+              </td>
             </tr>
             <tr>
-              <td>Drumien</td>
-              <td>≃504,5</td>
+              <td>
+                Drumien <br /> <p className="date">≃504,5</p>
+              </td>
             </tr>
             <tr>
-              <td>Wuliuen</td>
-              <td>≃509</td>
+              <td>
+                Wuliuen <br /> <p className="date">≃509</p>
+              </td>
             </tr>
             <tr>
               <td rowSpan="2">Série 2</td>
-              <td>Étage 4</td>
-              <td>≃514</td>
+              <td>
+                Étage 4 <br /> <p className="date">≃514</p>
+              </td>
             </tr>
             <tr>
-              <td>Étage 3</td>
-              <td>≃521</td>
+              <td>
+                Étage 3 <br /> <p className="date">≃521</p>
+              </td>
             </tr>
             <tr>
               <td rowSpan="2">Terreneuvien</td>
-              <td>Étage 2</td>
-              <td>≃529</td>
+              <td>
+                Étage 2 <br /> <p className="date">≃529</p>
+              </td>
             </tr>
             <tr>
-              <td>Fortunien</td>
-              <td>541,0± 1,0</td>
+              <td>
+                Fortunien <br /> <p className="date">541,0± 1,0</p>
+              </td>
             </tr>
           </tbody>
         </table>

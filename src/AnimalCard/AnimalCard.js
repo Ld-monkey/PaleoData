@@ -1,8 +1,12 @@
-import React from "react";
+import { useEffect } from "react";
+
 import { useParams } from "react-router-dom";
 import "./AnimalCard.scss";
 
 const AnimalCard = ({ data }) => {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
   const { nom } = useParams();
 
   const animal = data.find((animal) => animal.nom === decodeURIComponent(nom));
