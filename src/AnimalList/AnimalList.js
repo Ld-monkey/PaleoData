@@ -93,6 +93,8 @@ const AnimalList = ({ data }) => {
 
   const noMatchingAnimals = animals.length === 0;
 
+  const imageUrl = `${process.env.PUBLIC_URL}${animal.image_url}`;
+
   return (
     <>
       <section className="search-option">
@@ -214,7 +216,7 @@ const AnimalList = ({ data }) => {
           {animals.map((animal) => (
             <li key={animal.nom}>
               <Link to={`/animal/${encodeURIComponent(animal.nom)}`}>
-                <img src={animal.image_url} alt={animal.nom} />
+                <img src={imageUrl} alt={animal.nom} />
                 <h3>{animal.nom}</h3>
               </Link>
             </li>
