@@ -14,7 +14,7 @@ import data from "../Data/data";
 function App() {
   return (
     <div className="App">
-      <HashRouter basename={process.env.PUBLIC_URL}>
+      <HashRouter>
         <div>
           <Header />
           <Routes>
