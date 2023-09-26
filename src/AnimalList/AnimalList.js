@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from "react";
+import { useParams } from "react-router-dom";
 import { Link } from "react-router-dom";
 
 import "./AnimalList.scss";
@@ -93,6 +94,8 @@ const AnimalList = ({ data }) => {
 
   const noMatchingAnimals = animals.length === 0;
 
+  const { nom } = useParams();
+  const animal = data.find((animal) => animal.nom === decodeURIComponent(nom));
   const imageUrl = `${process.env.PUBLIC_URL}${animal.image_url}`;
 
   return (
