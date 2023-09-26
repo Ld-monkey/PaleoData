@@ -18,7 +18,7 @@ function App() {
         <div>
           <Header />
           <Routes>
-            <Route path="/" element={<HomePage />} />
+            <Route path="/accueil" element={<HomePage />} />
             <Route path="/animaux" element={<AnimalList data={data} />} />
             <Route path="/animal/:nom" element={<AnimalCard data={data} />} />
             <Route path="/timeline" element={<Timeline />} />
