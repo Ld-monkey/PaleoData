@@ -1,0 +1,107 @@
+/* AnimalList.scss */
+
+/* Conteneur principal */
+.search-option {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  input[type="text"] {
+    width: 100%;
+    max-width: 20rem;
+    padding: 0.5rem;
+    margin-bottom: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 0.5rem;
+    font-size: 1rem;
+  }
+
+  /* Styles pour les étiquettes de filtre */
+  div {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-bottom: 1rem;
+
+    label {
+      font-size: 1rem;
+      font-weight: bold;
+      margin-bottom: 0.5rem;
+    }
+
+    /* Styles pour les menus déroulants */
+    select {
+      width: 100%;
+      max-width: 20rem;
+      padding: 0.5rem;
+      border: 1px solid #ccc;
+      border-radius: 0.5rem;
+      font-size: 1rem;
+    }
+  }
+
+  button {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 0.5rem;
+    padding: 0.5rem 1rem;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.2s;
+
+    &:hover {
+      background-color: #0056b3;
+    }
+  }
+
+  p {
+    color: red;
+  }
+}
+
+/* Liste d'animaux */
+.animal-listing {
+  ul {
+    list-style: none;
+    padding: 0;
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1rem;
+
+    @media (min-width: 768px) {
+      grid-template-columns: repeat(auto-fill, minmax(20rem, 1fr));
+    }
+
+    li {
+      background-color: #f5f5f5;
+      border: 1px solid #ddd;
+      border-radius: 0.5rem;
+      padding: 1rem;
+      text-align: center;
+      transition: background-color 0.2s;
+
+      &:hover {
+        background-color: #eee;
+      }
+
+      a {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-decoration: none;
+        color: #333;
+
+        img {
+          max-width: 100%;
+          height: auto;
+        }
+
+        h3 {
+          margin-top: 0.5rem;
+          font-size: 1rem;
+        }
+      }
+    }
+  }
+}

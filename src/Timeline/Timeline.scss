@@ -1,0 +1,49 @@
+.timeline {
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 1rem;
+
+    th,
+    td {
+      border: 1px solid #ccc;
+      padding: 0.5rem;
+      text-align: center;
+    }
+
+    th {
+      background-color: #fcc0c0;
+      font-weight: bold;
+    }
+
+    td {
+      &:hover {
+        background-color: #e6e6e6;
+      }
+    }
+
+    tr.sticky-header {
+      position: sticky;
+      top: 0;
+      background-color: #f0f0f0;
+    }
+
+    span.time {
+      display: block;
+    }
+
+    /* Responsive styles using em, rem, vh, and vw units */
+    @media screen and (max-width: 768px) {
+      font-size: 0.8rem;
+
+      th,
+      td {
+        padding: 0.3rem;
+      }
+
+      span.time {
+        display: inline;
+      }
+    }
+  }
+}
