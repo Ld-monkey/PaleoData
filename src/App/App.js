@@ -1,5 +1,5 @@
 import React from "react";
-import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
+import { BrowserRouter, Route, Routes } from "react-router-dom";
 import Header from "../Header/Header";
 import Footer from "../Footer/Footer";
 import AnimalList from "../AnimalList/AnimalList";
@@ -14,7 +14,7 @@ import data from "../Data/data";
 function App() {
   return (
     <div className="App">
-      <Router>
+      <BrowserRouter basename={process.env.PUBLIC_URL}>
         <div>
           <Header />
           <Routes>
@@ -26,7 +26,7 @@ function App() {
           </Routes>
           <Footer />
         </div>
-      </Router>
+      </BrowserRouter>
     </div>
   );
 }
