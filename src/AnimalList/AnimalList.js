@@ -1,5 +1,4 @@
 import React, { useState, useEffect } from "react";
-import { useParams } from "react-router-dom";
 import { Link } from "react-router-dom";
 
 import "./AnimalList.scss";
@@ -93,10 +92,6 @@ const AnimalList = ({ data }) => {
   };
 
   const noMatchingAnimals = animals.length === 0;
-
-  const { nom } = useParams();
-  const animal = data.find((animal) => animal.nom === decodeURIComponent(nom));
-  const imageUrl = `${process.env.PUBLIC_URL}${animal.image_url}`;
 
   return (
     <>
@@ -216,14 +211,18 @@ const AnimalList = ({ data }) => {
 
       <section className="animal-listing">
         <ul>
-          {animals.map((animal) => (
-            <li key={animal.nom}>
-              <Link to={`/animal/${encodeURIComponent(animal.nom)}`}>
-                <img src={imageUrl} alt={animal.nom} />
-                <h3>{animal.nom}</h3>
-              </Link>
-            </li>
-          ))}
+          {animals.map((animal) => {
+            const imageUrl = `${process.env.PUBLIC_URL}${animal.image_url}`;
+
+            return (
+              <li key={animal.nom}>
+                <Link to={`/animal/${encodeURIComponent(animal.nom)}`}>
+                  <img src={imageUrl} alt={animal.nom} />
+                  <h3>{animal.nom}</h3>
+                </Link>
+              </li>
+            );
+          })}
         </ul>
       </section>
     </>
