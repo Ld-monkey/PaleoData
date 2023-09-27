@@ -766,7 +766,7 @@ const data = [
     geologie: {
       ere: "Paléozoïque",
       periode: "Dévonien",
-      epoque: "Dévonien",
+      epoque: "Moyen",
       etage: "Givétien",
       apparition: "-387 Ma",
       extinction: "-359 Ma",
@@ -1315,7 +1315,7 @@ const data = [
       especes:
         "Diplocaulus salamandroides Cope, Diplocaulus magnicornis Cope, Diplocaulus brevirostris",
     },
-    regime_alimentaire: "Carnovore, insectivore, piscivore, ",
+    regime_alimentaire: "Carnovore, insectivore, piscivore",
     habitat: "Rivières, étendues d'eau peu profondes",
     geologie: {
       ere: "Paléozoïque",
@@ -1875,7 +1875,7 @@ const data = [
       genre: "Marrella",
       especes: "Marrella splendens",
     },
-    regime_alimentaire: "",
+    regime_alimentaire: "Filtreur",
     habitat: "",
     geologie: {
       ere: "Paléozoïque",

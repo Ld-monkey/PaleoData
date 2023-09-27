@@ -37,6 +37,15 @@
       font-weight: 700;
     }
 
+    button {
+      margin-top: 1em;
+      border: none;
+      background-color: #a0ff68;
+      &:hover {
+        background-color: #c0ddb0;
+      }
+    }
+
     /* Responsive styles using em, rem, vh, and vw units */
     @media screen and (max-width: 768px) {
       font-size: 0.8rem;
