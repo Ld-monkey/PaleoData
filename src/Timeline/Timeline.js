@@ -817,7 +817,13 @@ const Timeline = () => {
               <td rowSpan="7">
                 Dévonien
                 <br />
-                <button onClick={() => openModal("Infos à venir ;) ")}>
+                <button
+                  onClick={() =>
+                    openModal(
+                      "De −419 à −359 Ma, soir 60 Ma, le Dévonien a été nommé d'après le comté de Devon, en Angleterre. <br /><br /> Le taux de dioxigène dans l'air est de 15%, tandis que le taux de dioxyde de carbone est d'environ 2200 ppm, soit 8 fois plus qu'avant la Révolution Industrielle du XIXè siècle. La température moyenne est de 20°C, mais il y eut des périodes où la température grimpait jusqu'à 30°C. Le niveau des mers est plus élevé qu'aujourd'hui. <br /><br /> La vie y est majoritairement marine et ce sont les requins qui sont les principaux prédateurs. D'est durant le Dévonien que les premiers amphibiens sont apparus. <br /><br/> Le Dévonien est aussi connu sous le nom d’'âge à effet de serre' ou encore d’'âge des fougères', la végétation (boisée comprise) prend de plus en plus de place sur la terre ferme. <br /> <br />Au Dévonien supérieur (entre le Frasnien et le Famennien) a lieu la deuxième extinction massive, qui affecte jusqu’à 70 % des espèces vivantes. La cause de cette extinction reste inconnue."
+                    )
+                  }
+                >
                   +
                 </button>
               </td>
@@ -908,7 +914,13 @@ const Timeline = () => {
               <td rowSpan="8">
                 Silurien
                 <br />
-                <button onClick={() => openModal("Infos à venir ;) ")}>
+                <button
+                  onClick={() =>
+                    openModal(
+                      "Durant à peine 24.2 Ma, de -443.4 à -419.2 Ma, le Silurien a été nommé en 1835 d'après une tribu celtique : les Silures. <br /><br /> Le taux de dioxigène dans l'air est de 14%, tandis que le taux de dioxyde de carbone est d'environ 4500 ppm, soit 16 fois plus qu'avant la Révolution Industrielle du XIXè siècle. La température moyenne est de 17°C. Le niveau des mers est 180 mètres plus élevé qu'aujourd'hui. <br /><br /> La vie y est essentiellement marine, mais les premières plantes multicellulaires commencent à appraitre. Cela reste des organismes simples, se reproduisant à l'aide de spores. Les premiers arthropodes commencent à coloniser la Terre. <br /><br /> Le supercontinent Gondwana se forme dans l'hémisphère Sud du globe."
+                    )
+                  }
+                >
                   +
                 </button>
               </td>
@@ -1015,7 +1027,13 @@ const Timeline = () => {
               <td rowSpan="7">
                 Ordovicien
                 <br />
-                <button onClick={() => openModal("Infos à venir ;) ")}>
+                <button
+                  onClick={() =>
+                    openModal(
+                      "S'étandant sur environ 42,0 ± 3,4 Ma, de - 485,4 ± 1,9 à - 443,4 ± 1,5, l'Ordovicien tient son nom des Ordovices, un peuple brittonique de l’actuel Pays de Galles. Il a fallu un moment aux scientifiques pour résoudre un problème de classification géologique entre le Cambrien, la période précédent l'Ordovicien, et le Silurien, période suivante. <br /><br /> Le taux de dioxigène dans l'air est de 13.5%, tandis que le taux de dioxyde de carbone est d'environ 4200 ppm, soit 15 fois plus qu'avant la Révolution Industrielle du XIXè siècle. La température moyenne est de 16°C, soit plus froide que durant le Cambrien. Cette baisse de température permet une explosion de la biodiversité marine. Les scientifiques estiment que le nombre de genres et de familles d'êtres vivants a triplé voire quadruplé. <br /><br />La fin de l'Ordovicien est marquée par la première des cinq grandes extinctions massives de l'Histoire des temps géologiques, où près de 60 % des espèces marines ont disparu et peut-être 85 % du total des espèces (végétales et animales). Cette extinction de masse s'appelle 'l'extinction Ordovicien-Silurien.'"
+                    )
+                  }
+                >
                   +
                 </button>
               </td>
@@ -1110,7 +1128,7 @@ const Timeline = () => {
                 <button
                   onClick={() =>
                     openModal(
-                      "Nous retrouvons des strates géologiques cambriennes partout dans le monde. Le Cambrien, qui s'étend de −541 ± 1,0 à −485,4 ± 1,9 millions d'années, est la première, et la plus ancienne, des six périodes géologiques du Paléozoïque. <br /><br /> Le Cambrien a été introduit par Adam Sedgwick en 1835. Il dérive de Cambria, le nom latin du Pays de Galles, où de nombreux terrains de cette période sont visibles. <br /><br /> Durant cette période, la vie s'y développe uniquement dans l'eau, bien que la terre ferme existe déjà depuis des milions d'années."
+                      "Nous retrouvons des strates géologiques cambriennes partout dans le monde. Le Cambrien, qui s'étend de −541 ± 1,0 à −485,4 ± 1,9 millions d'années, est la première, et la plus ancienne, des six périodes géologiques du Paléozoïque. <br /><br /> Le Cambrien a été introduit par Adam Sedgwick en 1835. Il dérive de Cambria, le nom latin du Pays de Galles, où de nombreux terrains de cette période sont visibles. <br /><br /> Durant cette période, la vie s'y développe uniquement dans l'eau, bien que la terre ferme existe déjà depuis des milions d'années. Comme les plantes n'existent pas encore, le taux de dioxigène dans l'air n'est que de 12.5%, tandis que le taux de dioxyde de carbone avoisine les 4500 ppm, soit 16 fois plus qu'avant la Révolution Industrielle du XIXè siècle. La température moyenne est de 21°C et le niveau des mers est compris entre 30 et 90 mètres de plus qu'aujourd'hui."
                     )
                   }
                 >
