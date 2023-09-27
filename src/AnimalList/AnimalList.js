@@ -90,8 +90,13 @@ const AnimalList = ({ data }) => {
       geologyStage: "",
     });
   };
-
   const noMatchingAnimals = animals.length === 0;
+
+  const [showMoreFilters, setShowMoreFilters] = useState(false);
+
+  const toggleMoreFilters = () => {
+    setShowMoreFilters(!showMoreFilters);
+  };
 
   return (
     <>
@@ -103,7 +108,6 @@ const AnimalList = ({ data }) => {
           value={searchQuery}
           onChange={handleSearchChange}
         />
-
         {/* <div>
         <label>Filtrer par taxonomie: </label>
         <select
@@ -119,91 +123,101 @@ const AnimalList = ({ data }) => {
           ))}
         </select>
       </div> */}
+        <button onClick={toggleMoreFilters}>
+          {showMoreFilters
+            ? "Masquer les filtres avancés"
+            : "Afficher les filtres avancés"}
+        </button>
+        {showMoreFilters && (
+          <section className="more-filter">
+            <div>
+              <label>Filtrer par régime alimentaire: </label>
+              <select
+                onChange={(e) => handleFilterChange("diet", e.target.value)}
+                value={filters.diet}
+              >
+                <option value="">Tous</option>
 
-        <div>
-          <label>Filtrer par régime alimentaire: </label>
-          <select
-            onChange={(e) => handleFilterChange("diet", e.target.value)}
-            value={filters.diet}
-          >
-            <option value="">Tous</option>
+                {[...uniqueDiets].sort().map((diet) => (
+                  <option key={diet} value={diet}>
+                    {diet}
+                  </option>
+                ))}
+              </select>
+            </div>
 
-            {[...uniqueDiets].sort().map((diet) => (
-              <option key={diet} value={diet}>
-                {diet}
-              </option>
-            ))}
-          </select>
-        </div>
+            <div>
+              <label>Filtrer par habitat: </label>
+              <select
+                onChange={(e) => handleFilterChange("habitat", e.target.value)}
+                value={filters.habitat}
+              >
+                <option value="">Tous</option>
 
-        <div>
-          <label>Filtrer par habitat: </label>
-          <select
-            onChange={(e) => handleFilterChange("habitat", e.target.value)}
-            value={filters.habitat}
-          >
-            <option value="">Tous</option>
+                {[...uniqueHabitats].sort().map((habitat) => (
+                  <option key={habitat} value={habitat}>
+                    {habitat}
+                  </option>
+                ))}
+              </select>
+            </div>
 
-            {[...uniqueHabitats].sort().map((habitat) => (
-              <option key={habitat} value={habitat}>
-                {habitat}
-              </option>
-            ))}
-          </select>
-        </div>
+            <div>
+              <label>Filtrer par période géologique: </label>
+              <select
+                onChange={(e) =>
+                  handleFilterChange("geologyPeriod", e.target.value)
+                }
+                value={filters.geologyPeriod}
+              >
+                <option value="">Tous</option>
 
-        <div>
-          <label>Filtrer par période géologique: </label>
-          <select
-            onChange={(e) =>
-              handleFilterChange("geologyPeriod", e.target.value)
-            }
-            value={filters.geologyPeriod}
-          >
-            <option value="">Tous</option>
+                {[...uniqueGeologyPeriods].sort().map((period) => (
+                  <option key={period} value={period}>
+                    {period}
+                  </option>
+                ))}
+              </select>
+            </div>
 
-            {[...uniqueGeologyPeriods].sort().map((period) => (
-              <option key={period} value={period}>
-                {period}
-              </option>
-            ))}
-          </select>
-        </div>
+            <div>
+              <label>Filtrer par époque géologique: </label>
+              <select
+                onChange={(e) =>
+                  handleFilterChange("geologyEpoch", e.target.value)
+                }
+                value={filters.geologyEpoch}
+              >
+                <option value="">Tous</option>
 
-        <div>
-          <label>Filtrer par époque géologique: </label>
-          <select
-            onChange={(e) => handleFilterChange("geologyEpoch", e.target.value)}
-            value={filters.geologyEpoch}
-          >
-            <option value="">Tous</option>
+                {[...uniqueGeologyEpochs].sort().map((epoch) => (
+                  <option key={epoch} value={epoch}>
+                    {epoch}
+                  </option>
+                ))}
+              </select>
+            </div>
 
-            {[...uniqueGeologyEpochs].sort().map((epoch) => (
-              <option key={epoch} value={epoch}>
-                {epoch}
-              </option>
-            ))}
-          </select>
-        </div>
+            <div>
+              <label>Filtrer par étage géologique: </label>
+              <select
+                onChange={(e) =>
+                  handleFilterChange("geologyStage", e.target.value)
+                }
+                value={filters.geologyStage}
+              >
+                <option value="">Tous</option>
 
-        <div>
-          <label>Filtrer par étage géologique: </label>
-          <select
-            onChange={(e) => handleFilterChange("geologyStage", e.target.value)}
-            value={filters.geologyStage}
-          >
-            <option value="">Tous</option>
-
-            {[...uniqueGeologyStages].sort().map((stage) => (
-              <option key={stage} value={stage}>
-                {stage}
-              </option>
-            ))}
-          </select>
-        </div>
-
+                {[...uniqueGeologyStages].sort().map((stage) => (
+                  <option key={stage} value={stage}>
+                    {stage}
+                  </option>
+                ))}
+              </select>
+            </div>
+          </section>
+        )}
         <button onClick={resetFilters}>Réinitialiser les filtres</button>
-
         {noMatchingAnimals && (
           <p>Aucun animal ne correspond aux critères sélectionnés.</p>
         )}

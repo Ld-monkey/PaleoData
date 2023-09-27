@@ -89,14 +89,22 @@ const AnimalCard = ({ data }) => {
         <div>
           <h3>Autres informations</h3>
           {animal.autres_infos.taille && (
-            <p>
-              <span>Taille:</span> {animal.autres_infos.taille.longueur}
-            </p>
+            <>
+              <p>
+                <span>Taille (Longueur): </span>
+                {animal.autres_infos.taille.longueur}
+              </p>
+              {animal.autres_infos.taille.hauteur && (
+                <p>
+                  <span>Taille (Hauteur): </span>
+                  {animal.autres_infos.taille.hauteur}
+                </p>
+              )}
+            </>
           )}
           {animal.autres_infos.poids && (
             <p>
-              <span>Poids: </span>
-              {animal.autres_infos.poids}
+              <span>Poids:</span> {animal.autres_infos.poids}
             </p>
           )}
         </div>
