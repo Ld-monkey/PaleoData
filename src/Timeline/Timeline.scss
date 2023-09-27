@@ -1,6 +1,6 @@
 .timeline {
+  width: 100%;
   table {
-    width: 100%;
     border-collapse: collapse;
     font-size: 1rem;
 
@@ -56,7 +56,7 @@
       }
 
       span.time {
-        display: inline;
+        display: block;
       }
     }
   }

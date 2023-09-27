@@ -595,7 +595,12 @@ const Timeline = () => {
               </td>
             </tr>
             <tr>
-              <td rowSpan="2">Inférieur</td>U
+              <td rowSpan="2">
+                Inférieur <br />
+                <button onClick={() => openModal("Infos à venir ;) ")}>
+                  +
+                </button>
+              </td>
               <td>
                 Olénékien <br /> <p className="date">251,2</p> <br />
                 <button onClick={() => openModal("Infos à venir ;) ")}>
