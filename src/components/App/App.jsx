@@ -1,17 +1,15 @@
-import React from "react";
-import { HashRouter, Route, Routes } from "react-router-dom";
-import Header from "../Header/Header";
-import Footer from "../Footer/Footer";
-import AnimalList from "../AnimalList/AnimalList";
-import AnimalCard from "../AnimalCard/AnimalCard";
-import HomePage from "../HomePage/HomePage";
-import Timeline from "../Timeline/Timeline";
-import MentionsLegales from "../Footer/MentionsLegales/MentionsLegales";
+import { HashRouter, Route, Routes } from 'react-router-dom';
+import Header from '../Header/Header';
+import HomePage from '../HomePage/HomePage';
+import Footer from '../Footer/Footer';
+import AnimalList from '../AnimalList/AnimalList';
+import AnimalCard from '../AnimalCard/AnimalCard';
+import Timeline from '../Timeline/Timeline';
+import MentionsLegales from '../Footer/MentionsLegales/MentionsLegales';
+import ScrollToTopButton from '../ScrollToTopButton/ScrollToTopButton';
+import data from '../../assets/data/data';
 
-import ScrollToTopButton from "../ScrollToTopButton/ScrollToTopButton";
-import "./App.scss";
-
-import data from "../Data/data";
+import './App.scss';
 
 function App() {
   return (
