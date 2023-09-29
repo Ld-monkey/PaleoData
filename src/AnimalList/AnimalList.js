@@ -7,17 +7,17 @@ const AnimalList = ({ data }) => {
   const [animals, setAnimals] = useState(data);
   const [searchQuery, setSearchQuery] = useState("");
   const [filters, setFilters] = useState({
-    // taxonomy: "",
     diet: "",
     habitat: "",
+    geologyEra: "",
     geologyPeriod: "",
     geologyEpoch: "",
     geologyStage: "",
   });
 
-  // const uniqueTaxonomies = new Set(data.map((animal) => animal.taxonomie.famille));
   const uniqueDiets = new Set(data.map((animal) => animal.regime_alimentaire));
   const uniqueHabitats = new Set(data.map((animal) => animal.habitat));
+  const uniqueGeologyEras = new Set(data.map((animal) => animal.geologie.ere));
   const uniqueGeologyPeriods = new Set(
     data.map((animal) => animal.geologie.periode)
   );
@@ -33,11 +33,6 @@ const AnimalList = ({ data }) => {
       return (
         animal.nom &&
         animal.nom.toLowerCase().includes(searchQuery.toLowerCase()) &&
-        // (filters.taxonomy === "" ||
-        //   (animal.taxonomie &&
-        //     animal.taxonomie.famille &&
-        //     animal.taxonomie.famille.toLowerCase() ===
-        //       filters.taxonomy.toLowerCase())) &&
         (filters.diet === "" ||
           (animal.regime_alimentaire &&
             animal.regime_alimentaire.toLowerCase() ===
@@ -45,6 +40,11 @@ const AnimalList = ({ data }) => {
         (filters.habitat === "" ||
           (animal.habitat &&
             animal.habitat.toLowerCase() === filters.habitat.toLowerCase())) &&
+        (filters.geologyEra === "" ||
+          (animal.geologie &&
+            animal.geologie.ere &&
+            animal.geologie.ere.toLowerCase() ===
+              filters.geologyEra.toLowerCase())) &&
         (filters.geologyPeriod === "" ||
           (animal.geologie &&
             animal.geologie.periode &&
@@ -85,11 +85,13 @@ const AnimalList = ({ data }) => {
     setFilters({
       diet: "",
       habitat: "",
+      geologyEra: "",
       geologyPeriod: "",
       geologyEpoch: "",
       geologyStage: "",
     });
   };
+
   const noMatchingAnimals = animals.length === 0;
 
   const [showMoreFilters, setShowMoreFilters] = useState(false);
@@ -108,21 +110,7 @@ const AnimalList = ({ data }) => {
           value={searchQuery}
           onChange={handleSearchChange}
         />
-        {/* <div>
-        <label>Filtrer par taxonomie: </label>
-        <select
-          onChange={(e) => handleFilterChange("taxonomy", e.target.value)}
-          value={filters.taxonomy}
-        >
-          <option value="">Tous</option>
-   
-          {[...uniqueTaxonomies].map((taxonomy) => (
-            <option key={taxonomy} value={taxonomy}>
-              {taxonomy}
-            </option>
-          ))}
-        </select>
-      </div> */}
+
         <button onClick={toggleMoreFilters}>
           {showMoreFilters
             ? "Masquer les filtres avancés"
@@ -157,6 +145,23 @@ const AnimalList = ({ data }) => {
                 {[...uniqueHabitats].sort().map((habitat) => (
                   <option key={habitat} value={habitat}>
                     {habitat}
+                  </option>
+                ))}
+              </select>
+            </div>
+            <div>
+              <label>Filtrer par ère géologique: </label>
+              <select
+                onChange={(e) =>
+                  handleFilterChange("geologyEra", e.target.value)
+                }
+                value={filters.geologyEra}
+              >
+                <option value="">Tous</option>
+
+                {[...uniqueGeologyEras].sort().map((era) => (
+                  <option key={era} value={era}>
+                    {era}
                   </option>
                 ))}
               </select>
