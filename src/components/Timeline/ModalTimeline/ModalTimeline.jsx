@@ -1,5 +1,4 @@
-import React from "react";
-import "./ModalTimeline.scss";
+import './ModalTimeline.scss';
 
 const ModalTimeline = ({ isOpen, closeModal, content }) => {
   return (

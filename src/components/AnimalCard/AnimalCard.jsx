@@ -1,9 +1,9 @@
-import { useEffect } from "react";
-
-import { useParams } from "react-router-dom";
-import "./AnimalCard.scss";
+import { useEffect } from 'react';
+import { useParams } from 'react-router-dom';
+import './AnimalCard.scss';
 
 const AnimalCard = ({ data }) => {
+  console.log('data :', data);
   useEffect(() => {
     window.scrollTo(0, 0);
   }, []);
@@ -18,18 +18,16 @@ const AnimalCard = ({ data }) => {
   const formatTaxonName = (taxon) => {
     if (taxon) {
       return taxon
-        .split("_")
+        .split('_')
         .map((word) => word.charAt(0).toUpperCase() + word.slice(1))
-        .join(" ");
+        .join(' ');
     }
-    return "";
+    return '';
   };
 
-  const taxonEntries = Object.entries(animal.taxonomie).filter(
-    ([_, value]) => value !== ""
-  );
+  const taxonEntries = Object.entries(animal.taxonomie).filter(([_, value]) => value !== '');
 
-  const imageUrl = `${process.env.PUBLIC_URL}${animal.image_url}`;
+  const imageUrl = `${animal.image_url}`;
 
   return (
     <div className="animal-card">
