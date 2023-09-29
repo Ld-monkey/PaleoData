@@ -2,7 +2,7 @@ const data = [
   {
     nom: 'Acadagnostus',
     etymologie: 'Ailes géantes (en référence aux deux épines dorsales)',
-    image_url: '/src/assets/images/Acadagnostus.jpeg',
+    image_url: './assets/images/Acadagnostus.jpeg',
     taxonomie: {
       regne: 'Animalia',
       sous_regne: '',
@@ -59,7 +59,7 @@ const data = [
   {
     nom: 'Acanthostega',
     etymologie: 'Abri épineux',
-    image_url: '/src/assets/images/Acanthostega.jpeg',
+    image_url: './assets/images/Acanthostega.jpeg',
     taxonomie: {
       regne: 'Animalia',
       sous_regne: '',
@@ -114,7 +114,7 @@ const data = [
   {
     nom: 'Acherontiscus',
     etymologie: 'Référence à l’Achéron, une rivière de la mythologie grecque',
-    image_url: '/src/assets/images/Acherontiscus.jpeg',
+    image_url: './assets/images/Acherontiscus.jpeg',
     taxonomie: {
       regne: 'Animalia',
       sous_regne: '',
@@ -168,7 +168,7 @@ const data = [
   {
     nom: 'Acleistorhinus',
     etymologie: '--',
-    image_url: '/src/assets/images/Acleistorhinus.jpeg',
+    image_url: './assets/images/Acleistorhinus.jpeg',
     taxonomie: {
       regne: 'Animalia',
       sous_regne: '',
@@ -223,7 +223,7 @@ const data = [
   {
     nom: 'Akmonistion',
     etymologie: "Voile en forme d'enclume",
-    image_url: '/src/assets/images/Akmonistion.jpeg',
+    image_url: './assets/images/Akmonistion.jpeg',
     taxonomie: {
       regne: 'Animalia',
       sous_regne: '',
@@ -278,7 +278,7 @@ const data = [
   {
     nom: 'Amiskwia',
     etymologie: '--',
-    image_url: '/src/assets/images/Amiskwia.jpeg',
+    image_url: './assets/images/Amiskwia.jpeg',
     taxonomie: {
       regne: 'Animalia',
       sous_regne: '',
@@ -333,7 +333,7 @@ const data = [
   {
     nom: 'Anglaspis',
     etymologie: 'Écaille angulaire',
-    image_url: '/src/assets/images/Anglaspis.jpeg',
+    image_url: './assets/images/Anglaspis.jpeg',
     taxonomie: {
       regne: 'Animalia',
       sous_regne: '',
@@ -388,7 +388,7 @@ const data = [
   {
     nom: 'Anomalocaris',
     etymologie: 'Crevette anormale',
-    image_url: '/src/assets/images/Anomalocaris.jpeg',
+    image_url: './assets/images/Anomalocaris.jpeg',
     taxonomie: {
       regne: 'Animalia',
       sous_regne: 'Metazoa',
@@ -444,7 +444,7 @@ const data = [
   {
     nom: 'Arandaspis',
     etymologie: "Vient du lieu de sa découvete, près duquel habitent les Aranda, une tribu arborigène d'Australie",
-    image_url: '/src/assets/images/Arandaspis.jpeg',
+    image_url: './assets/images/Arandaspis.jpeg',
     taxonomie: {
       regne: 'Animalia',
       sous_regne: '',
@@ -499,7 +499,7 @@ const data = [
   {
     nom: 'Arthropleura',
     etymologie: 'Côté articulé',
-    image_url: '/src/assets/images/Arthropleura.jpeg',
+    image_url: './assets/images/Arthropleura.jpeg',
     taxonomie: {
       regne: 'Animalia',
       sous_regne: '',
@@ -564,7 +564,7 @@ const data = [
   {
     nom: 'Aysheaia',
     etymologie: '',
-    image_url: '/src/assets/images/Aysheaia.jpeg',
+    image_url: './assets/images/Aysheaia.jpeg',
     taxonomie: {
       regne: 'Animalia',
       sous_regne: 'Eumetazoa',
@@ -620,7 +620,7 @@ const data = [
     nom: 'Birkenia',
     etymologie:
       "Dérivé de 'Birken' en référence à la région de Birkenes en Norvège, où les premiers fossiles de cet animal préhistorique ont été découverts",
-    image_url: '/src/assets/images/Birkenia.jpeg',
+    image_url: './assets/images/Birkenia.jpeg',
     taxonomie: {
       regne: 'Animalia',
       sous_regne: '',
@@ -675,7 +675,7 @@ const data = [
   {
     nom: 'Boreaspis',
     etymologie: 'Ecailles du Nord',
-    image_url: '/src/assets/images/Boreaspis.jpeg',
+    image_url: './assets/images/Boreaspis.jpeg',
     taxonomie: {
       regne: 'Animalia',
       sous_regne: 'Vertebrata',
@@ -731,7 +731,7 @@ const data = [
   {
     nom: 'Bothriolepis',
     etymologie: 'Ecailles en forme de fosse',
-    image_url: '/src/assets/images/Bothriolepis.jpeg',
+    image_url: './assets/images/Bothriolepis.jpeg',
     taxonomie: {
       regne: 'Animalia',
       sous_regne: '',
@@ -787,7 +787,7 @@ const data = [
   {
     nom: 'Canadaspis',
     etymologie: 'Bouclier canadien',
-    image_url: '/src/assets/images/Canadaspis.jpeg',
+    image_url: './assets/images/Canadaspis.jpeg',
     taxonomie: {
       regne: 'Animalia',
       sous_regne: '',
@@ -842,7 +842,7 @@ const data = [
   {
     nom: 'Cephalaspis',
     etymologie: "Tête d'écailles",
-    image_url: '/src/assets/images/Cephalaspis.jpeg',
+    image_url: './assets/images/Cephalaspis.jpeg',
     taxonomie: {
       regne: 'Animalia',
       sous_regne: '',
@@ -897,7 +897,7 @@ const data = [
   {
     nom: 'Cistecephalus',
     etymologie: 'Tête en forme de panier',
-    image_url: '/src/assets/images/Cistecephalus.jpeg',
+    image_url: './assets/images/Cistecephalus.jpeg',
     taxonomie: {
       regne: 'Animalia',
       sous_regne: '',
@@ -952,7 +952,7 @@ const data = [
   {
     nom: 'Cladoselache',
     etymologie: 'Ressemblant au requin',
-    image_url: '/src/assets/images/Cladoselache.jpeg',
+    image_url: './assets/images/Cladoselache.jpeg',
     taxonomie: {
       regne: 'Animalia',
       sous_regne: '',
@@ -1008,7 +1008,7 @@ const data = [
   {
     nom: 'Conodonta',
     etymologie: 'Dents en forme de cône',
-    image_url: '/src/assets/images/Conodontes.jpg',
+    image_url: './assets/images/Conodontes.jpg',
     taxonomie: {
       regne: 'Animalia',
       sous_regne: '',
@@ -1063,7 +1063,7 @@ const data = [
   {
     nom: 'Crassigyrinus',
     etymologie: '--',
-    image_url: '/src/assets/images/Crassigyrinus.jpeg',
+    image_url: './assets/images/Crassigyrinus.jpeg',
     taxonomie: {
       regne: 'Animalia',
       sous_regne: '',
@@ -1118,7 +1118,7 @@ const data = [
   {
     nom: 'Deinotherium',
     etymologie: 'Animal terrible',
-    image_url: '/src/assets/images/Deinotherium.jpg',
+    image_url: './assets/images/Deinotherium.jpg',
     taxonomie: {
       regne: 'Animalia',
       sous_regne: '',
@@ -1173,7 +1173,7 @@ const data = [
   {
     nom: 'Diictodon',
     etymologie: 'Dents en double',
-    image_url: '/src/assets/images/Diictodon.jpeg',
+    image_url: './assets/images/Diictodon.jpeg',
     taxonomie: {
       regne: 'Animalia',
       sous_regne: '',
@@ -1228,7 +1228,7 @@ const data = [
   {
     nom: 'Dimétrodon',
     etymologie: 'Dents de deux mètres',
-    image_url: '/src/assets/images/Dimetrodon.jpeg',
+    image_url: './assets/images/Dimetrodon.jpeg',
     taxonomie: {
       regne: 'Animalia',
       sous_regne: '',
@@ -1284,7 +1284,7 @@ const data = [
   {
     nom: 'Diplocaulus',
     etymologie: 'Double bâton',
-    image_url: '/src/assets/images/Diplocaulus.jpeg',
+    image_url: './assets/images/Diplocaulus.jpeg',
     taxonomie: {
       regne: 'Animalia',
       sous_regne: '',
@@ -1339,7 +1339,7 @@ const data = [
   {
     nom: 'Dipterus',
     etymologie: '',
-    image_url: '/src/assets/images/Dipterus.jpeg',
+    image_url: './assets/images/Dipterus.jpeg',
     taxonomie: {
       regne: 'Animalia',
       sous_regne: '',
@@ -1395,7 +1395,7 @@ const data = [
   {
     nom: 'Doryaspis',
     etymologie: 'Lance et bouclier',
-    image_url: '/src/assets/images/Doryaspis.jpg',
+    image_url: './assets/images/Doryaspis.jpg',
     taxonomie: {
       regne: 'Animalia',
       sous_regne: '',
@@ -1450,7 +1450,7 @@ const data = [
   {
     nom: 'Drepanaspis',
     etymologie: 'Faucille et bouclier',
-    image_url: '/src/assets/images/Drepanaspis.jpeg',
+    image_url: './assets/images/Drepanaspis.jpeg',
     taxonomie: {
       regne: 'Animalia',
       sous_regne: '',
@@ -1506,7 +1506,7 @@ const data = [
   {
     nom: 'Dunkleosteus',
     etymologie: "En l'honneur du paléontologue David Dunkle, 'osteus' signifiant 'ossature'",
-    image_url: '/src/assets/images/Dunkleosteus.jpeg',
+    image_url: './assets/images/Dunkleosteus.jpeg',
     taxonomie: {
       regne: 'Animalia',
       sous_regne: '',
@@ -1561,7 +1561,7 @@ const data = [
   {
     nom: 'Edaphosaurus',
     etymologie: '',
-    image_url: '/src/assets/images/Edaphosaurus.jpeg',
+    image_url: './assets/images/Edaphosaurus.jpeg',
     taxonomie: {
       regne: 'Animalia',
       sous_regne: '',
@@ -1617,7 +1617,7 @@ const data = [
   {
     nom: 'Haikouichthys',
     etymologie: 'Poisson de Haikou',
-    image_url: '/src/assets/images/Haikouichthys.jpeg',
+    image_url: './assets/images/Haikouichthys.jpeg',
     taxonomie: {
       regne: 'Animalia',
       sous_regne: 'Eumetazoa',
@@ -1673,7 +1673,7 @@ const data = [
   {
     nom: 'Halkieria',
     etymologie: 'Du nom de Frans Halkeri, son découvreur',
-    image_url: '/src/assets/images/Halkieria.jpeg',
+    image_url: './assets/images/Halkieria.jpeg',
     taxonomie: {
       regne: 'Animalia',
       sous_regne: '',
@@ -1730,7 +1730,7 @@ const data = [
     nom: 'Hallucigenia',
     etymologie:
       "Le paléontologue Simon Conway Morris choisit en 1977 le nom de 'Hallucigenia' à cause des « qualités étranges et fantaisistes semblant sorties d'un rêve » de l'animal (comme une hallucination)",
-    image_url: '/src/assets/images/Hallucigenia.jpeg',
+    image_url: './assets/images/Hallucigenia.jpeg',
     taxonomie: {
       regne: 'Animalia',
       sous_regne: '',
@@ -1785,7 +1785,7 @@ const data = [
   {
     nom: 'Hyolitha',
     etymologie: '',
-    image_url: '/src/assets/images/Hyolitha.jpeg',
+    image_url: './assets/images/Hyolitha.jpeg',
     taxonomie: {
       regne: 'Animalia',
       sous_regne: '',
@@ -1840,7 +1840,7 @@ const data = [
   {
     nom: 'Marrella',
     etymologie: "Du nom d'un ami de son découvreur (Charles Doolittle Walcott): Dr John Edmund Marr",
-    image_url: '/src/assets/images/Marrella.jpeg',
+    image_url: './assets/images/Marrella.jpeg',
     taxonomie: {
       regne: 'Animalia',
       sous_regne: '',
@@ -1895,7 +1895,7 @@ const data = [
   {
     nom: 'Meganeura',
     etymologie: 'Ailes géantes',
-    image_url: '/src/assets/images/Meganeura.jpeg',
+    image_url: './assets/images/Meganeura.jpeg',
     taxonomie: {
       regne: 'Animalia',
       sous_regne: '',
@@ -1951,7 +1951,7 @@ const data = [
   {
     nom: 'Nectocaris',
     etymologie: 'Crevette nageuse',
-    image_url: '/src/assets/images/Nectocaris.jpeg',
+    image_url: './assets/images/Nectocaris.jpeg',
     taxonomie: {
       regne: 'Animalia',
       sous_regne: '',
@@ -2006,7 +2006,7 @@ const data = [
   {
     nom: 'Odontogriphus',
     etymologie: 'Enigme dentée',
-    image_url: '/src/assets/images/Odontogriphus.jpeg',
+    image_url: './assets/images/Odontogriphus.jpeg',
     taxonomie: {
       regne: 'Animalia',
       sous_regne: '',
@@ -2061,7 +2061,7 @@ const data = [
   {
     nom: 'Opabinia',
     etymologie: 'Dérivant du lieu de sa découverte: le Mont Opabin (Canada)',
-    image_url: '/src/assets/images/Opabinia.jpeg',
+    image_url: './assets/images/Opabinia.jpeg',
     taxonomie: {
       regne: 'Animalia',
       sous_regne: '',
@@ -2116,7 +2116,7 @@ const data = [
   {
     nom: 'Pikaia',
     etymologie: 'Cordon amer',
-    image_url: '/src/assets/images/Pikaia.jpeg',
+    image_url: './assets/images/Pikaia.jpeg',
     taxonomie: {
       regne: 'Animalia',
       sous_regne: 'Eumetazoa',
@@ -2171,7 +2171,7 @@ const data = [
   {
     nom: 'Pterygotus',
     etymologie: "L'aile",
-    image_url: '/src/assets/images/Pterygotus.jpeg',
+    image_url: './assets/images/Pterygotus.jpeg',
     taxonomie: {
       regne: 'Animalia',
       sous_regne: '',
@@ -2228,7 +2228,7 @@ const data = [
   {
     nom: 'Sidneyia',
     etymologie: 'Walcott le baptisa du prénom de son fils, Sidney',
-    image_url: '/src/assets/images/Sidneyia.jpeg',
+    image_url: './assets/images/Sidneyia.jpeg',
     taxonomie: {
       regne: 'Animalia',
       sous_regne: '',
@@ -2283,7 +2283,7 @@ const data = [
   {
     nom: 'Wiwaxia',
     etymologie: "De la langue Pied-Noir signifiant 'Petit éclat de graisse' ou 'Ver de suif'",
-    image_url: '/src/assets/images/Wiwaxia.jpeg',
+    image_url: './assets/images/Wiwaxia.jpeg',
     taxonomie: {
       regne: 'Animalia',
       sous_regne: '',
@@ -2339,7 +2339,7 @@ const data = [
   {
     nom: 'Placerias',
     etymologie: 'Corps large',
-    image_url: '/src/assets/images/Placerias.jpeg',
+    image_url: './assets/images/Placerias.jpeg',
     taxonomie: {
       regne: 'Animalia',
       sous_regne: '',
@@ -2394,7 +2394,7 @@ const data = [
   {
     nom: 'Stethacanthus',
     etymologie: 'Épine de poitrine',
-    image_url: '/src/assets/images/Stethacanthus.jpeg',
+    image_url: './assets/images/Stethacanthus.jpeg',
     taxonomie: {
       regne: 'Animalia',
       sous_regne: '',
@@ -2450,7 +2450,7 @@ const data = [
   {
     nom: 'Basilosaurus',
     etymologie: 'Lézard royal',
-    image_url: '/src/assets/images/Basilosaurus.jpeg',
+    image_url: './assets/images/Basilosaurus.jpeg',
     taxonomie: {
       regne: 'Animalia',
       sous_regne: '',
@@ -2505,7 +2505,7 @@ const data = [
   {
     nom: 'Postosuchus',
     etymologie: 'Crocodile de Post',
-    image_url: '/src/assets/images/Postosuchus.jpeg',
+    image_url: './assets/images/Postosuchus.jpeg',
     taxonomie: {
       regne: 'Animalia',
       sous_regne: '',
@@ -2560,7 +2560,7 @@ const data = [
   // {
   //   nom: "",
   //   etymologie: "",
-  //   image_url: "/src/assets/images/.jpeg",
+  //   image_url: "./assets/images/.jpeg",
   //   taxonomie: {
   //     regne: "Animalia",
   //     sous_regne: "",
@@ -2614,7 +2614,7 @@ const data = [
   // {
   //   nom: "",
   //   etymologie: "",
-  //   image_url: "/src/assets/images/.jpeg",
+  //   image_url: "./assets/images/.jpeg",
   //   taxonomie: {
   //     regne: "Animalia",
   //     sous_regne: "",
@@ -2668,7 +2668,7 @@ const data = [
   // {
   //   nom: "",
   //   etymologie: "",
-  //   image_url: "/src/assets/images/.jpeg",
+  //   image_url: "./assets/images/.jpeg",
   //   taxonomie: {
   //     regne: "Animalia",
   //     sous_regne: "",
@@ -2722,7 +2722,7 @@ const data = [
   // {
   //   nom: "",
   //   etymologie: "",
-  //   image_url: "/src/assets/images/.jpeg",
+  //   image_url: "./assets/images/.jpeg",
   //   taxonomie: {
   //     regne: "Animalia",
   //     sous_regne: "",
@@ -2776,7 +2776,7 @@ const data = [
   // {
   //   nom: "",
   //   etymologie: "",
-  //   image_url: "/src/assets/images/.jpeg",
+  //   image_url: "./assets/images/.jpeg",
   //   taxonomie: {
   //     regne: "Animalia",
   //     sous_regne: "",
@@ -2830,7 +2830,7 @@ const data = [
   // {
   //   nom: "",
   //   etymologie: "",
-  //   image_url: "/src/assets/images/.jpeg",
+  //   image_url: "./assets/images/.jpeg",
   //   taxonomie: {
   //     regne: "Animalia",
   //     sous_regne: "",
@@ -2884,7 +2884,7 @@ const data = [
   // {
   //   nom: "",
   //   etymologie: "",
-  //   image_url: "/src/assets/images/.jpeg",
+  //   image_url: "./assets/images/.jpeg",
   //   taxonomie: {
   //     regne: "Animalia",
   //     sous_regne: "",
@@ -2938,7 +2938,7 @@ const data = [
   // {
   //   nom: "",
   //   etymologie: "",
-  //   image_url: "/src/assets/images/.jpeg",
+  //   image_url: "./assets/images/.jpeg",
   //   taxonomie: {
   //     regne: "Animalia",
   //     sous_regne: "",
@@ -2992,7 +2992,7 @@ const data = [
   // {
   //   nom: "",
   //   etymologie: "",
-  //   image_url: "/src/assets/images/.jpeg",
+  //   image_url: "./assets/images/.jpeg",
   //   taxonomie: {
   //     regne: "Animalia",
   //     sous_regne: "",
@@ -3046,7 +3046,7 @@ const data = [
   // {
   //   nom: "",
   //   etymologie: "",
-  //   image_url: "/src/assets/images/.jpeg",
+  //   image_url: "./assets/images/.jpeg",
   //   taxonomie: {
   //     regne: "Animalia",
   //     sous_regne: "",

@@ -176,7 +176,7 @@ const AnimalList = ({ data }) => {
             </div>
           </section>
         )}
-        <button onClick={resetFilters} type="buttonx">
+        <button onClick={resetFilters} type="button">
           Réinitialiser les filtres
         </button>
         {noMatchingAnimals && <p>Aucun animal ne correspond aux critères sélectionnés.</p>}

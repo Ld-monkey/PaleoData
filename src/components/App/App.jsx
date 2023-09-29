@@ -7,7 +7,7 @@ import AnimalCard from '../AnimalCard/AnimalCard';
 import Timeline from '../Timeline/Timeline';
 import MentionsLegales from '../Footer/MentionsLegales/MentionsLegales';
 import ScrollToTopButton from '../ScrollToTopButton/ScrollToTopButton';
-import data from '../../assets/data/data';
+import data from '../../data/data';
 
 import './App.scss';
 
