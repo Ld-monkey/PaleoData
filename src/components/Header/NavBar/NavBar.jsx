@@ -16,7 +16,12 @@ function NavBar() {
           </NavLink>
         </li>
         <li>
-          <NavLink to="/timeline">Chronologie</NavLink>
+          <NavLink to="/frise-chronologique">Chronologie</NavLink>
+        </li>
+        <li>
+          <NavLink to="/liste-etymologique" activeclassname="active">
+            Etymologie
+          </NavLink>
         </li>
       </ul>
     </nav>

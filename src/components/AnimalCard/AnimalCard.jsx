@@ -3,7 +3,6 @@ import { useParams } from 'react-router-dom';
 import './AnimalCard.scss';
 
 const AnimalCard = ({ data }) => {
-  console.log('data :', data);
   useEffect(() => {
     window.scrollTo(0, 0);
   }, []);
