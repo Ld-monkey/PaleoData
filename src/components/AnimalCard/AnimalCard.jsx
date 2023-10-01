@@ -97,6 +97,12 @@ const AnimalCard = ({ data }) => {
                   {animal.autres_infos.taille.hauteur}
                 </p>
               )}
+              {animal.autres_infos.taille.envergure && (
+                <p>
+                  <span>Taille (Envergure): </span>
+                  {animal.autres_infos.taille.envergure}
+                </p>
+              )}
             </>
           )}
           {animal.autres_infos.poids && (

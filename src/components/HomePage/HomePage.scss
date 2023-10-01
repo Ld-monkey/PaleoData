@@ -1,4 +1,9 @@
 .home-page {
+  text-align: center;
+  background-image: url(../../../public/paysage_prehistoire.jpeg);
+  background-repeat: no-repeat;
+  background-size: cover; /* Cette ligne ajuste la taille de l'image */
+  background-position: center; /* Centre l'image horizontalement et verticalement */
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   gap: 20px;
@@ -9,12 +14,14 @@
   }
 
   .about-section {
-    background-color: #c7c1c1;
+    background-color: #c7c1c18c;
+    border-radius: 1em;
     padding: 1em;
   }
 
   .contact-section {
-    background-color: #ecffd3;
+    background-color: #ecffd38c;
+    border-radius: 1em;
     border: 1px solid #ccc;
     padding: 1em;
 
@@ -46,7 +53,7 @@
       display: block;
       margin-top: 10px;
       font-size: 0.9rem;
-      color: #888;
+      color: #463838;
       b {
         text-decoration: underline;
       }
