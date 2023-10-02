@@ -1,9 +1,18 @@
 .home-page {
+  background: linear-gradient(
+    to bottom,
+    #00324e,
+    #0077be,
+    #f6d02e,
+    #e5c888,
+    #ff6633,
+    #8b4513,
+    #006400,
+    #87ceeb,
+    #abf5ff
+  );
   text-align: center;
-  background-image: url(../../../public/paysage_prehistoire.jpeg);
-  background-repeat: no-repeat;
-  background-size: cover; /* Cette ligne ajuste la taille de l'image */
-  background-position: center; /* Centre l'image horizontalement et verticalement */
+
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   gap: 20px;

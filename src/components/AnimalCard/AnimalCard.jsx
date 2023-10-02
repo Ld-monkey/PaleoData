@@ -80,6 +80,16 @@ const AnimalCard = ({ data }) => {
               <span>Étage:</span> {animal.geologie.etage}
             </p>
           )}
+          {animal.geologie.apparition && (
+            <p>
+              <span>Apparition:</span> {animal.geologie.apparition}
+            </p>
+          )}
+          {animal.geologie.extinction && (
+            <p>
+              <span>Extinction:</span> {animal.geologie.extinction}
+            </p>
+          )}
         </div>
       )}
       {animal.autres_infos && (

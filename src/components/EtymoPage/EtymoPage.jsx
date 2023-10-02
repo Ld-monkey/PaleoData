@@ -18,6 +18,7 @@ function EtymoPage() {
     { root: 'ornitho-', meaning: 'oiseau' },
     { root: '-pleur-', meaning: 'côté' },
     { root: '-arthro-', meaning: 'articulé' },
+    { root: '-avis', meaning: 'oiseau' },
   ];
 
   etymologyData.sort((a, b) => a.root.replace('-', '').localeCompare(b.root.replace('-', '')));

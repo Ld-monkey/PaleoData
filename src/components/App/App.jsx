@@ -11,6 +11,8 @@ import MentionsLegales from '../Footer/MentionsLegales/MentionsLegales';
 import ScrollToTopButton from '../ScrollToTopButton/ScrollToTopButton';
 import data from '../../data/data';
 
+import NotFound from '../NotFound/NotFound';
+
 import './App.scss';
 
 function App() {
@@ -26,6 +28,7 @@ function App() {
             <Route path="/frise-chronologique" element={<Timeline />} />
             <Route path="/liste-etymologique" element={<EtymoPage />} />
             <Route path="/mentions-legales" element={<MentionsLegales />} />
+            <Route path="*" element={<NotFound />} />
           </Routes>
           <Footer />
         </div>
