@@ -140,7 +140,7 @@ const AnimalCard = ({ data }) => {
       )}
 
       {taxonEntries.length > 0 && (
-        <div>
+        <div className="taxon">
           <h3>Taxonomie</h3>
           <table>
             <tbody>

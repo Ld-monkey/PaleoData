@@ -19,6 +19,7 @@ function EtymoPage() {
     { root: '-pleur-', meaning: 'côté' },
     { root: '-arthro-', meaning: 'articulé' },
     { root: '-avis', meaning: 'oiseau' },
+    { root: '-cheirus', meaning: 'main' },
   ];
 
   etymologyData.sort((a, b) => a.root.replace('-', '').localeCompare(b.root.replace('-', '')));
