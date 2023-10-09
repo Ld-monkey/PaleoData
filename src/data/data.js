@@ -3542,7 +3542,7 @@ const data = [
       extinction: '-154 Ma',
     },
     description:
-      "Sur la base d'un seul fossile d'Eustreptospondylus connu à ce jour, les paléontologues savent que ce dinosaure avait un crâne présentant museau plutôt pointu en vue latérale, avec une grande narine orientée horizontalement. Des rainures obliques dans les articulations des mâchoires permettaient d'élargir l'ouverture de la gueule lorsque les mâchoires inférieures étaient ouvertes. Même si aucune dent n'a été découverte à ce jour, nous savons que c'était un animal carnivore.",
+      "Sur la base d'un seul fossile d'Eustreptospondylus connu à ce jour, les paléontologues savent que ce dinosaure avait un crâne présentant museau plutôt pointu en vue latérale, avec une grande narine orientée horizontalement. Des rainures obliques dans les articulations des mâchoires permettaient d'élargir l'ouverture de la gueule lorsque les mâchoires inférieures étaient ouvertes. Même si aucune dent n'a été découverte à ce jour, nous savons que c'était un animal carnivore. Certains avancent qu'Eustreptospondylus pouvait nager en eaux peu profondes, pour chasser sur des îles voisines.",
     autres_infos: {
       taille: {
         longueur: '7 mètres',
