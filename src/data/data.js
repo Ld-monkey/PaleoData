@@ -2813,7 +2813,7 @@ const data = [
     regime_alimentaire: 'Omnivore',
     habitat: 'Terre ferme',
     geologie: {
-      ere: 'Cénoozoïque',
+      ere: 'Cénozoïque',
       periode: 'Paléogène',
       epoque: 'Oligocène',
       etage: 'Rupélien',
@@ -3036,7 +3036,7 @@ const data = [
     regime_alimentaire: 'Végétarien',
     habitat: 'Terre ferme, forêts',
     geologie: {
-      ere: 'Cénoozoïque',
+      ere: 'Cénozoïque',
       periode: 'Quaternaire',
       epoque: 'Pliocène',
       etage: 'Plaisancien',
