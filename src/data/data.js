@@ -3811,7 +3811,7 @@ const data = [
         'Megaloceros antecedens, Megaloceros giganteus, Megaloceros luochuanensis, Megaloceros matritensis, Megaloceros novocarthaginiensis, Megaloceros savini',
     },
     regime_alimentaire: 'Herbivore',
-    habitat: '',
+    habitat: 'Forêts',
     geologie: {
       ere: 'Cénozoïque',
       periode: 'Quaternaire',
