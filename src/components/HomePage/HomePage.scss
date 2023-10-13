@@ -33,9 +33,6 @@
       border-radius: 0.5rem;
       list-style: none;
       padding: 1em;
-      display: grid;
-      grid-template-columns: 1fr;
-      gap: 1rem;
 
       @media (min-width: 768px) {
         grid-template-columns: repeat(auto-fill, minmax(20rem, 1fr));
