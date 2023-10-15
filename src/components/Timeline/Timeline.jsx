@@ -630,6 +630,7 @@ const Timeline = () => {
                       "Composé de 6 périodes, le Paléozoïque (ayant pour étymologie 'Vie ancienne') est une ère géologique qui s'étend de −541 à −252,2 Ma, soit sur 288,8 Ma. Cette ère a longtemps été appelée 'Ère Primaire', ou 'Ère des Poissons' du fait d'une grande période de temps où la vie ne développait que dans l'eau. <br /><br /> Le Paléozoïque démarre peu après la fragmentation du supercontinent Rodinia en au moins huit masses continentales. Au cours de cette ère ces continents se rassemblent à nouveau pour former la Pangée. Au début de cette ère, les formes de vie se limitent à des bactéries, des algues, des éponges et une variété de formes encore mal connues apparues avant cette ère (durant l'Édicarien). <br /><br /> La diversité et le nombre d'organismes explosent durant le Cambrien. On pense que les premiers organismes terrestres apparaissent durant le Paléozoïque mais ce phénomène reste mineur avant le Silurien et le Dévonien. Bien que des vertébrés primitifs soient présents dès le début de cette ère, les invertébrés restent dominants jusqu'au milieu du Paléozoïque. La population de poissons explose durant le Dévonien. <br /><br /> Pendant la seconde moitié de cette ère et particulièrement au Carbonifère, de grandes forêts de plantes primitives forment ce qui deviendra des couches de charbon. À la fin du Paléozoïque, les premiers reptiles sophistiqués et les premières plantes modernes (conifères) se sont développés.",
                     )
                   }
+                  type="button"
                 >
                   +
                 </button>
@@ -733,7 +734,14 @@ const Timeline = () => {
               <td rowSpan="7">
                 Carbonifère
                 <br />
-                <button onClick={() => openModal('Infos à venir ;) ')} type="button">
+                <button
+                  onClick={() =>
+                    openModal(
+                      "Le Carbonifère s'étend de −358,9 ± 0,4 à −298,9 ± 0,2 Ma, soit sur une durée de 60 Ma ± 0.6 Ma. Cette période tient son nom des vastes couches de charbon qu’il a laissées en Europe de l'Ouest.<br /><br /> Le taux de dioxigène dans l'air est de 25%, tandis que le taux de dioxyde de carbone est d'environ 450 ppm, soit 2 fois plus qu'avant la Révolution Industrielle du XIXè siècle. La température moyenne est de 15°C. Durant le seconde partie du Carbonifère, le climat se refroidit au point qu'une glaciation dans les latitudes hautes de l'hémisphère sud est couvert de glace. Quand au niveau des mers, il est identique au Dévonien.<br /><br /> La vie sur terre s'y est considérablement développée. Les arbres à écorce composent les forêts. Un taux de dioxyde de carbone relativement élevé a indéniablement encouragé la croissance de la végétation, mais la présence d'un taux élevé de dioxygène a également rendu les forêts plus vulnérables aux incendies, ce qui formait du chabon en grande quantité. <br /><br /> Certains animaux du Carbonifère sont géants, pour ce qu'il sont et comparé aux espèces d'aujourd'hui: Les insectes et arthropodes était de tailles démesurées et cela s'explique aussi par le taux élevé d'dioxygène dans l'air. De plus, ces animaux n'avaient pratiquement pas de prédateurs, et du fait de forêts luxuriantes, ils avaient une nourriture abondante. C'est également à cette période que les premiers animaux à quatre pattes ont été créés. <br /> <br /> Le charbon a arrêté de se former à la fin du Carbonifère à cause de l'appartion champignons xylophages capable de dégrader le bois dans intégralité.",
+                    )
+                  }
+                  type="button"
+                >
                   +
                 </button>
               </td>
@@ -823,6 +831,7 @@ const Timeline = () => {
                       "De −419 à −359 Ma, soit 60 Ma, le Dévonien a été nommé d'après le comté de Devon, en Angleterre. <br /><br /> Le taux de dioxigène dans l'air est de 15%, tandis que le taux de dioxyde de carbone est d'environ 2200 ppm, soit 8 fois plus qu'avant la Révolution Industrielle du XIXè siècle. La température moyenne est de 20°C, mais il y eut des périodes où la température grimpait jusqu'à 30°C. Le niveau des mers est plus élevé qu'aujourd'hui. <br /><br /> La vie y est majoritairement marine et ce sont les requins qui sont les principaux prédateurs. D'est durant le Dévonien que les premiers amphibiens sont apparus. <br /><br/> Le Dévonien est aussi connu sous le nom d’'âge à effet de serre' ou encore d’'âge des fougères', la végétation (boisée comprise) prend de plus en plus de place sur la terre ferme. <br /> <br />Au Dévonien supérieur (entre le Frasnien et le Famennien) a lieu la deuxième extinction massive, qui affecte jusqu’à 70 % des espèces vivantes. La cause de cette extinction reste inconnue.",
                     )
                   }
+                  type="button"
                 >
                   +
                 </button>
