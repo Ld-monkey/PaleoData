@@ -1,35 +1,65 @@
-// Modal.scss
+/* ModalTimeline.scss */
+
 .modal-overlay {
+  display: none;
   position: fixed;
   top: 0;
-  left: 0;
-  width: 100%;
+  right: 0;
+  bottom: 0;
+  width: 0;
   height: 100%;
-  background: rgba(0, 0, 0, 0.5);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  overflow: auto;
-  z-index: 2;
-}
+  overflow-x: hidden;
+  transition: 0.3s;
+  z-index: 1;
 
-.modal-content {
-  background: #fff;
-  padding: 20px;
-  border-radius: 5px;
-  position: relative;
-  max-width: 80%;
-  max-height: 80vh;
-  overflow-y: auto;
+  &.open {
+    width: 100vw;
+  }
 }
 
 .close-btn {
-  background-color: rgb(0, 255, 234);
-  z-index: 2;
-  padding: 0.2em;
   position: absolute;
-  top: 2.2em;
-  right: 20px;
-  font-size: 20px;
+  top: 10px;
+  right: 10px;
+  font-size: 1.2em;
+  background-color: #275508;
+  padding: 0.2em;
+  border: none;
+  color: white;
   cursor: pointer;
+  z-index: 3;
+  text-align: center;
+}
+
+.modal-content {
+  display: none;
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 0;
+  height: 100%;
+  background-color: #dbeef7;
+  overflow-y: auto;
+  transition: 0.3s;
+  z-index: 2;
+  max-width: 70vw;
+
+  &.open {
+    width: 70%;
+  }
+  .text-content {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana,
+      sans-serif;
+    line-height: 1.3em;
+    margin-top: 2em;
+  }
+
+  div {
+    padding: 20px;
+  }
+}
+
+.modal-overlay.open,
+.modal-content.open {
+  display: block;
 }
