@@ -15,7 +15,6 @@ const ModalTimeline = ({ isOpen, closeModal, content }) => {
         X
       </button>
       <div className={`modal-content ${isOpen ? 'open' : ''}`} onClick={(e) => e.stopPropagation()}>
-        {/* Utilisez white-space: pre-line pour gérer les sauts de ligne */}
         <div className="text-content" style={{ whiteSpace: 'pre-line' }}>
           {content}
         </div>
