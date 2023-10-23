@@ -30,8 +30,8 @@ const AnimalCard = ({ data }) => {
 
   return (
     <div className="animal-card">
-      <img src={imageUrl} alt={animal.nom} />
       <h2>{animal.nom}</h2>
+      <img src={imageUrl} alt={animal.nom} />
 
       <div>
         <h3>Etymologie</h3>

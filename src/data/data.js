@@ -130,7 +130,7 @@ const data = [
       sous_classe: '',
       division: '',
       super_ordre: '',
-      order: 'Adelospondyli',
+      ordre: 'Adelospondyli',
       sous_ordre: '',
       infra_ordre: '',
       micro_ordre: '',

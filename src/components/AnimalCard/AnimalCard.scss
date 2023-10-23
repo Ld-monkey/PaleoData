@@ -6,19 +6,25 @@
   box-shadow: 0 0 100px #567dff91;
   border-radius: 5px;
   text-align: center;
+  display: flex;
+  flex-direction: column;
   align-items: center;
 
   img {
     max-width: 100%;
     height: auto;
-    margin-bottom: 1rem;
+    margin-bottom: 1em;
     outline: 5px solid #567dff91;
     border-radius: 0.5em;
   }
 
   h2 {
+    margin-bottom: 1em;
     font-size: 2rem;
-    margin: 0;
+
+    @media (max-width: 768px) {
+      font-size: 1.5rem;
+    }
   }
 
   h3 {
