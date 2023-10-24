@@ -24,9 +24,9 @@ const Timeline = ({ timelineData }) => {
 
     const formattedValue = isMillionYears ? (
       <span>
-        {`${absValue.toLocaleString()} Ma`}
+        {`-${absValue.toLocaleString()} Ma`}
         <br />
-        {`(${(absValue * 1000000).toLocaleString()} ans)`}
+        {`(-${(absValue * 1000000).toLocaleString()} ans)`}
       </span>
     ) : (
       <span>{`${absValue.toLocaleString()} ${absValue < 0 ? 'Ma' : 'ans'}`}</span>
