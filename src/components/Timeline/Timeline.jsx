@@ -22,11 +22,17 @@ const Timeline = ({ timelineData }) => {
     const isMillionYears = value < 0;
     const absValue = Math.abs(value);
 
-    const formattedValue = isMillionYears
-      ? `-${absValue.toLocaleString()} Ma (${(absValue * 1000000).toLocaleString()} ans)`
-      : `${absValue.toLocaleString()} ${absValue < 0 ? 'Ma' : 'ans'}`;
+    const formattedValue = isMillionYears ? (
+      <span>
+        {`${absValue.toLocaleString()} Ma`}
+        <br />
+        {`(${(absValue * 1000000).toLocaleString()} ans)`}
+      </span>
+    ) : (
+      <span>{`${absValue.toLocaleString()} ${absValue < 0 ? 'Ma' : 'ans'}`}</span>
+    );
 
-    return <span>{formattedValue}</span>;
+    return formattedValue;
   };
 
   return (
