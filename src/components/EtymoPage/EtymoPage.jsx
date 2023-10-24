@@ -20,6 +20,7 @@ function EtymoPage() {
     { root: '-arthro-', meaning: 'articulé' },
     { root: '-avis', meaning: 'oiseau' },
     { root: '-cheirus', meaning: 'main' },
+    { root: '-archus', meaning: 'maître' },
   ];
 
   etymologyData.sort((a, b) => a.root.replace('-', '').localeCompare(b.root.replace('-', '')));

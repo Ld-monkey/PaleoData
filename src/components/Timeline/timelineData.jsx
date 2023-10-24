@@ -19,19 +19,22 @@ const timelineData = [
             name: 'Terreneuvien',
             epochStart: -541,
             epochEnd: -521,
-            epochInfo: 'Infos à venir :) ',
+            epochInfo:
+              "S'étendant sur 20 Ma, l'époque (ou série) du Terreneuvien est divisée en deux étages géologiques. Son nom remplace l'ancienne appellation 'Série 1', et vient du nom de l'Île de Terre-Neuve, au Canada, où a été défini le point stratotypique mondial de cette époque et de l'étage correspondant au Fortunien.",
             stage: [
               {
                 name: 'Fortunien',
                 stageStart: -541,
                 stageEnd: -529,
-                stageInfo: 'Infos à venir :) ',
+                stageInfo:
+                  "Le Fortunien est le premier étage de la première époque (ou série) du Cambrien. S'étendant sur 12 Ma, le Fortunien est défini par la présence de traces fossiles appelées Treptichnus pedum.",
               },
               {
                 name: 'Étage 2',
                 stageStart: -529,
                 stageEnd: -521,
-                stageInfo: 'Infos à venir :) ',
+                stageInfo:
+                  "L'Étage 2 est le second étage du Cambrien. Il n'a pas encore de nom spécifique. C'est durant ces 8 Ma que les premiers conodontes commence à peupler les océans.",
               },
             ],
           },
@@ -39,19 +42,22 @@ const timelineData = [
             name: 'Série 2',
             epochStart: -521,
             epochEnd: -509,
-            epochInfo: 'Infos à venir :) ',
+            epochInfo:
+              "La série 2 ne porte pas encore de nom établit. Mais cette deuxième époque (ou série) du Cambrien s'étend sur 12 Ma. C'est au début de cette époque que nous aurions pu y trouver les premiers trilobites.",
             stage: [
               {
                 name: 'Étage 3',
                 stageStart: -511,
                 stageEnd: -514,
-                stageInfo: 'Infos à venir :) ',
+                stageInfo:
+                  "Durant 6 Ma, la vie dans les océans commence à exister. Les premières espèces de trilobites existent. Cet étage n'a pas encore de nom définit, mais les géologues travaillant en Sibérie, où les strates de cet étage sont bien présents, lui donnent le nom de Adtabanien.",
               },
               {
                 name: 'Étage 4',
                 stageStart: -514,
                 stageEnd: -509,
-                stageInfo: 'Infos à venir :) ',
+                stageInfo:
+                  'Ce second étage de la Série 2 dure 6 Ma. De nouvelles espèces de trilobites vivent dans les océans du Cambrien.',
               },
             ],
           },
