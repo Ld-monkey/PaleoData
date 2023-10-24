@@ -18,13 +18,24 @@ const Timeline = ({ timelineData }) => {
     setIsModalOpen(false);
   };
 
+  const formatValue = (value) => {
+    const isMillionYears = value < 0;
+    const absValue = Math.abs(value);
+
+    const formattedValue = isMillionYears
+      ? `-${absValue.toLocaleString()} Ma (${(absValue * 1000000).toLocaleString()} ans)`
+      : `${absValue.toLocaleString()} ${absValue < 0 ? 'Ma' : 'ans'}`;
+
+    return <span>{formattedValue}</span>;
+  };
+
   return (
     <div className="timeline-container">
       {timelineData.map((era) => (
         <div key={era.era} className="era">
           <div className="era-label">{era.era}</div>
-          <div className="era-start">{era.eraStart} Ma</div>
-          <div className="era-end">{era.eraEnd} Ma</div>
+          <div className="era-start">{formatValue(era.eraStart)}</div>
+          <div className="era-end">{formatValue(era.eraEnd)}</div>
 
           {era.eraInfo && (
             <button type="button" className="info-btn" onClick={() => handleInfoClick(era.eraInfo)}>
@@ -35,8 +46,8 @@ const Timeline = ({ timelineData }) => {
           {era.periods.map((period) => (
             <div key={period.name} className="period">
               <div className="period-label">{period.name}</div>
-              <div className="period-start">{period.periodStart} Ma</div>
-              <div className="period-end">{period.periodEnd} Ma</div>
+              <div className="period-start">{formatValue(period.periodStart)}</div>
+              <div className="period-end">{formatValue(period.periodEnd)}</div>
               {period.periodInfo && (
                 <button type="button" className="info-btn" onClick={() => handleInfoClick(period.periodInfo)}>
                   ℹ️
@@ -46,8 +57,8 @@ const Timeline = ({ timelineData }) => {
               {period.epochs.map((epoch) => (
                 <div key={epoch.name} className="epoch">
                   <div className="epoch-label">{epoch.name}</div>
-                  <div className="epoch-start">{epoch.epochStart} Ma</div>
-                  <div className="epoch-end">{epoch.epochEnd} Ma</div>
+                  <div className="epoch-start">{formatValue(epoch.epochStart)}</div>
+                  <div className="epoch-end">{formatValue(epoch.epochEnd)}</div>
                   {epoch.epochInfo && (
                     <button type="button" className="info-btn" onClick={() => handleInfoClick(epoch.epochInfo)}>
                       ℹ️
@@ -58,8 +69,8 @@ const Timeline = ({ timelineData }) => {
                     epoch.stage.map((stage) => (
                       <div key={stage.name} className="stage">
                         <div className="stage-label">{stage.name}</div>
-                        <div className="stage-start">{stage.stageStart} Ma</div>
-                        <div className="stage-end">{stage.stageEnd} Ma</div>
+                        <div className="stage-start">{formatValue(stage.stageStart)}</div>
+                        <div className="stage-end">{formatValue(stage.stageEnd)}</div>
                         {stage.stageInfo && (
                           <button type="button" className="info-btn" onClick={() => handleInfoClick(stage.stageInfo)}>
                             ℹ️

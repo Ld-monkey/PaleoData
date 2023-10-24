@@ -21,6 +21,7 @@
 
     .era-start,
     .era-end {
+      margin-top: 6px;
       font-size: 16px;
       color: #dadada;
     }
@@ -40,6 +41,7 @@
 
       .period-start,
       .period-end {
+        margin-top: 6px;
         font-size: 16px;
         color: #666;
       }
@@ -59,6 +61,7 @@
 
         .epoch-start,
         .epoch-end {
+          margin-top: 6px;
           font-size: 16px;
           color: #666;
         }
@@ -78,11 +81,15 @@
 
           .stage-start,
           .stage-end {
+            margin-top: 6px;
             font-size: 12px;
             color: #666;
           }
         }
       }
+    }
+    span {
+      margin-top: 5px;
     }
 
     .info-btn {
