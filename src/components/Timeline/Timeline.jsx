@@ -40,6 +40,7 @@ const Timeline = ({ timelineData }) => {
 
   return (
     <div className="timeline-container">
+      <h3>Cliquez sur les boîtes pour voyager dans le temps</h3>
       {timelineData.map((era) => (
         <div key={era.era} className="era">
           <div
@@ -47,15 +48,16 @@ const Timeline = ({ timelineData }) => {
             onClick={() => setOpenEra(openEra === era.era ? null : era.era)}
           >
             {era.era}
-          </div>
-          <div className="era-start">{formatValue(era.eraStart)}</div>
-          <div className="era-end">{formatValue(era.eraEnd)}</div>
 
-          {era.eraInfo && (
-            <button type="button" className="info-btn" onClick={() => handleInfoClick(era.eraInfo)}>
-              ℹ️
-            </button>
-          )}
+            <div className="era-start">{formatValue(era.eraStart)}</div>
+            <div className="era-end">{formatValue(era.eraEnd)}</div>
+
+            {era.eraInfo && (
+              <button type="button" className="info-btn" onClick={() => handleInfoClick(era.eraInfo)}>
+                ℹ️
+              </button>
+            )}
+          </div>
 
           {openEra === era.era &&
             era.periods.map((period) => (
@@ -65,14 +67,14 @@ const Timeline = ({ timelineData }) => {
                   onClick={() => setOpenPeriod(openPeriod === period.name ? null : period.name)}
                 >
                   {period.name}
+                  <div className="period-start">{formatValue(period.periodStart)}</div>
+                  <div className="period-end">{formatValue(period.periodEnd)}</div>
+                  {period.periodInfo && (
+                    <button type="button" className="info-btn" onClick={() => handleInfoClick(period.periodInfo)}>
+                      ℹ️
+                    </button>
+                  )}{' '}
                 </div>
-                <div className="period-start">{formatValue(period.periodStart)}</div>
-                <div className="period-end">{formatValue(period.periodEnd)}</div>
-                {period.periodInfo && (
-                  <button type="button" className="info-btn" onClick={() => handleInfoClick(period.periodInfo)}>
-                    ℹ️
-                  </button>
-                )}
 
                 {openPeriod === period.name &&
                   period.epochs.map((epoch) => (
@@ -82,14 +84,14 @@ const Timeline = ({ timelineData }) => {
                         onClick={() => setOpenEpoch(openEpoch === epoch.name ? null : epoch.name)}
                       >
                         {epoch.name}
+                        <div className="epoch-start">{formatValue(epoch.epochStart)}</div>
+                        <div className="epoch-end">{formatValue(epoch.epochEnd)}</div>
+                        {epoch.epochInfo && (
+                          <button type="button" className="info-btn" onClick={() => handleInfoClick(epoch.epochInfo)}>
+                            ℹ️
+                          </button>
+                        )}{' '}
                       </div>
-                      <div className="epoch-start">{formatValue(epoch.epochStart)}</div>
-                      <div className="epoch-end">{formatValue(epoch.epochEnd)}</div>
-                      {epoch.epochInfo && (
-                        <button type="button" className="info-btn" onClick={() => handleInfoClick(epoch.epochInfo)}>
-                          ℹ️
-                        </button>
-                      )}
 
                       {openEpoch === epoch.name &&
                         epoch.stage &&
