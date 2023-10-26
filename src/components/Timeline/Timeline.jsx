@@ -32,7 +32,7 @@ const Timeline = ({ timelineData }) => {
         {`(-${(absValue * 1000000).toLocaleString()} ans)`}
       </span>
     ) : (
-      <span>{`${absValue.toLocaleString()} ${absValue < 0 ? 'Ma' : 'ans'}`}</span>
+      <span>{`${absValue.toLocaleString()} ${absValue < 0 ? 'Ma' : ''}`}</span>
     );
 
     return formattedValue;

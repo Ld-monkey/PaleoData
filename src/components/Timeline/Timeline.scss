@@ -5,14 +5,14 @@
   padding: 20px;
   text-align: center;
   h3 {
-    background-color: #d0e4f0;
+    background-color: #bda0bc;
     padding: 0.3em;
     border-radius: 0.5em;
   }
 
   .era {
     // Section: Era
-    background-color: #8c35d38a;
+    background-color: #dfc8de;
     padding: 20px;
     margin: 20px;
     outline: 6px ridge #000000;
@@ -21,21 +21,21 @@
 
     .era-label {
       font-size: 20px;
-      color: #ffffff;
+      color: #000000;
     }
 
     .era-start,
     .era-end {
       margin-top: 6px;
       font-size: 16px;
-      color: #dadada;
+      color: #4b4b4b;
     }
 
     .period {
       // Section: Period
       margin-top: 20px;
       padding: 20px;
-      background-color: #9dffbacb;
+      background-color: #bda0bc;
       outline: 6px ridge #000000;
       border-radius: 5px;
 
@@ -55,40 +55,40 @@
         // Section: Epoch
         margin-top: 20px;
         padding: 20px;
-        background-color: #e9be47c9;
-        outline: 6px ridge #000000;
+        background-color: #a2708a;
+        outline: 6px ridge #616161;
         border-radius: 5px;
 
         .epoch-label {
           font-size: 16px;
-          color: #333;
+          color: #ffffff;
         }
 
         .epoch-start,
         .epoch-end {
           margin-top: 6px;
           font-size: 16px;
-          color: #666;
+          color: #dfdbdb;
         }
 
         .stage {
           // Section: Stage
           margin-top: 20px;
           padding: 20px;
-          background-color: #1ef3e8d8;
+          background-color: #824670;
           outline: 6px ridge #000000;
           border-radius: 5px;
 
           .stage-label {
             font-size: 14px;
-            color: #333;
+            color: #ffffff;
           }
 
           .stage-start,
           .stage-end {
             margin-top: 6px;
             font-size: 12px;
-            color: #666;
+            color: #dfdbdb;
           }
         }
       }
@@ -99,7 +99,7 @@
 
     .info-btn {
       // Info Button
-      background-color: #c50e64b4;
+      background-color: #583253;
       color: #fff;
       border: none;
       border-radius: 50%;
@@ -107,7 +107,7 @@
       height: 30px;
       font-size: 18px;
       cursor: pointer;
-      margin-left: 10px;
+      margin-top: 10px;
 
       &:hover {
         background-color: #0056b3;
