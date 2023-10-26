@@ -2589,7 +2589,7 @@ const data = [
       especes: 'Pampaphoneus biccai',
     },
     regime_alimentaire: 'Carnivore',
-    habitat: 'Terre ferme',
+    habitat: 'Pampa argentine',
     geologie: {
       ere: 'Paléozoïque',
       periode: 'Permien',
@@ -2976,7 +2976,7 @@ const data = [
       especes: 'Argentavis magnificens',
     },
     regime_alimentaire: 'Carnivore',
-    habitat: 'Pamapa argentine',
+    habitat: 'Pampa argentine',
     geologie: {
       ere: 'Cénozoïque',
       periode: 'Néogène',
