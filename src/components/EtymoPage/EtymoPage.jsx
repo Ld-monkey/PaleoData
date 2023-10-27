@@ -21,6 +21,8 @@ function EtymoPage() {
     { root: '-avis', meaning: 'oiseau' },
     { root: '-cheirus', meaning: 'main' },
     { root: '-archus', meaning: 'maître' },
+    { root: '-long', meaning: 'dragon' },
+    { root: '-cera-', meaning: 'corne' },
   ];
 
   etymologyData.sort((a, b) => a.root.replace('-', '').localeCompare(b.root.replace('-', '')));
