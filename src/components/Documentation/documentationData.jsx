@@ -12,6 +12,18 @@ const documentationData = [
     ],
   },
   {
+    section: 'Gisements de fossiles',
+    data: [
+      {
+        notion: 'Schistes de Brugess',
+        explications:
+          "En 1909, le paléontologue américain Charles Walcott met au jour un riche gisement de fossiles remarquablement bien conservés dans les schistes de Burgess, dans les Montagnes Rocheuses canadiennes. La préservation exceptionnelle des spécimens dans des sédiments à grains fins datant du Cambrien moyen (environ 520 millions d'années) permet l'étude détaillée de nombreuses formes à corps mou jusque-là insoupçonnées. Cette découverte révèle que les faunes du début du Paléozoïque étaient beaucoup plus diversifiées que ne le laissaient soupçonner les fréquents fossiles d'animaux à carapace ou à squelette. Elle démontre ainsi l'importance des gisements à conservation exceptionnelle pour notre connaissance de l'histoire de la vie.",
+        illustration: './assets/images_doc/gisements/schistes_de_Brugess.jpg',
+        alt: 'La carrière de Walcott dans les schistes de Burgess (Cambrien moyen), en Colombie-Britannique.',
+      },
+    ],
+  },
+  {
     section: 'Paléontologues célèbres',
     data: [
       {
@@ -69,12 +81,13 @@ const documentationData = [
         illustration: './assets/images_doc/paleontologues/Franz_Nopcsa.jpeg',
         alt: 'Portrait de Franz Nopcsa',
       },
-      // {
-      //   notion: '',
-      //   explications: '',
-      //   illustration: './assets/images_doc/paleontologues/.jpg',
-      //   alt: 'Portrait de ',
-      // },
+      {
+        notion: 'Charles Doolittle Walcott (1850-1927)',
+        explications:
+          "Charles Doolittle Walcott devient célèbre pour sa découverte en 1909 de fossiles bien préservés dans les schistes de Burgess en Colombie-Britannique, au Canada. Dans ces schistes, de nombreux fossiles d'invertébrés sont découverts, bon nombre d'entre eux par Walcott lui-même. La plupart datent de la période du Cambrien (moyen), au début de l'ère Paléozoïque.",
+        illustration: './assets/images_doc/paleontologues/Charles_Walcott.jpg',
+        alt: 'Photo-portrait de Charles Doolittle Walcott',
+      },
       // {
       //   notion: '',
       //   explications: '',
