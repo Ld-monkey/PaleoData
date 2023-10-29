@@ -8,6 +8,8 @@ import AnimalCard from '../AnimalCard/AnimalCard';
 import Timeline from '../Timeline/Timeline';
 import timelineData from '../Timeline/timelineData';
 import EtymoPage from '../EtymoPage/EtymoPage';
+import Documentation from '../Documentation/Documentation';
+import documentationData from '../Documentation/documentationData';
 import MentionsLegales from '../Footer/MentionsLegales/MentionsLegales';
 import ScrollToTopButton from '../ScrollToTopButton/ScrollToTopButton';
 import data from '../../data/data';
@@ -29,6 +31,7 @@ function App() {
             <Route path="/frise-chronologique" element={<Timeline timelineData={timelineData} />} />
 
             <Route path="/liste-etymologique" element={<EtymoPage />} />
+            <Route path="/documentation" element={<Documentation documentationData={documentationData} />} />
             <Route path="/mentions-legales" element={<MentionsLegales />} />
             <Route path="*" element={<NotFound />} />
           </Routes>

@@ -23,6 +23,11 @@ function NavBar() {
             Etymologie
           </NavLink>
         </li>
+        <li>
+          <NavLink to="/documentation" activeclassname="active">
+            Documentation
+          </NavLink>
+        </li>
       </ul>
     </nav>
   );
