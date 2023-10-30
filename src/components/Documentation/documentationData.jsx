@@ -109,7 +109,7 @@ const documentationData = [
     ],
   },
   {
-    section: 'Fossiles',
+    section: 'Fossiles célèbres',
     data: [
       {
         notion: 'Coelophysis',
