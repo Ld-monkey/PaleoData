@@ -55,6 +55,7 @@ function MentionsLegales() {
           https://chrstn67.github.io/PaleoData/#/ est soumis au droit français. En dehors des cas où la loi ne le permet
           pas, il est fait attribution exclusive de juridiction aux tribunaux compétents.
         </p>
+        <p>Remerciements à Ludovic FOURTEAU</p>
       </main>
     </section>
   );

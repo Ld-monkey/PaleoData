@@ -9,6 +9,10 @@
   .footer-content {
     font-size: 0.9rem;
 
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+
     a {
       color: #fff;
       text-decoration: underline;
@@ -16,6 +20,10 @@
       &:hover {
         color: #3498db;
       }
+    }
+    img {
+      width: 3em;
+      height: 3em;
     }
   }
 }

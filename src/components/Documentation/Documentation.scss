@@ -1,0 +1,77 @@
+// Global styles
+$primary-color: #0079fa;
+$font-family: Arial, sans-serif;
+$spacing-unit: 1rem;
+
+body {
+  font-family: $font-family;
+  margin: 0;
+  padding: 0;
+}
+
+section {
+  margin: 1rem;
+}
+
+.search-notions {
+  input {
+    width: 100%;
+    padding: 0.5em;
+    border: 1px solid $primary-color;
+    border-radius: 0.5em;
+  }
+}
+
+.notions h3 {
+  font-size: 1.5rem;
+  color: $primary-color;
+  margin-top: 2rem;
+}
+
+details {
+  margin-top: 1rem;
+  padding: 1rem;
+  background-color: #f5f5f5;
+  border: 1px solid #ddd;
+  border-radius: 0.5em;
+  cursor: pointer;
+  transition: background-color 0.3s;
+
+  &:hover {
+    background-color: #e0e0e0;
+  }
+
+  summary {
+    font-size: 1.2rem;
+    color: $primary-color;
+  }
+
+  p {
+    font-size: 1rem;
+    line-height: 1.4;
+  }
+
+  img {
+    max-width: 50%;
+    height: auto;
+    margin: 0 auto 1em;
+    border-radius: 0.5em;
+    @media (max-width: 500px) {
+      max-width: 100%;
+    }
+  }
+
+  @media (max-width: 768px) {
+    h3 {
+      font-size: 1.2rem;
+    }
+
+    details {
+      margin: 0.5rem 0;
+      padding: 0.5rem;
+      summary {
+        font-size: 1rem;
+      }
+    }
+  }
+}

@@ -30,8 +30,8 @@ const AnimalCard = ({ data }) => {
 
   return (
     <div className="animal-card">
-      <img src={imageUrl} alt={animal.nom} />
       <h2>{animal.nom}</h2>
+      <img src={imageUrl} alt={animal.nom} />
 
       <div>
         <h3>Etymologie</h3>
@@ -80,6 +80,16 @@ const AnimalCard = ({ data }) => {
               <span>Étage:</span> {animal.geologie.etage}
             </p>
           )}
+          {animal.geologie.apparition && (
+            <p>
+              <span>Apparition:</span> {animal.geologie.apparition}
+            </p>
+          )}
+          {animal.geologie.extinction && (
+            <p>
+              <span>Extinction:</span> {animal.geologie.extinction}
+            </p>
+          )}
         </div>
       )}
       {animal.autres_infos && (
@@ -95,6 +105,12 @@ const AnimalCard = ({ data }) => {
                 <p>
                   <span>Taille (Hauteur): </span>
                   {animal.autres_infos.taille.hauteur}
+                </p>
+              )}
+              {animal.autres_infos.taille.envergure && (
+                <p>
+                  <span>Taille (Envergure): </span>
+                  {animal.autres_infos.taille.envergure}
                 </p>
               )}
             </>
@@ -124,7 +140,7 @@ const AnimalCard = ({ data }) => {
       )}
 
       {taxonEntries.length > 0 && (
-        <div>
+        <div className="taxon">
           <h3>Taxonomie</h3>
           <table>
             <tbody>

@@ -90,7 +90,7 @@ const AnimalList = ({ data }) => {
         {/* Barre de recherche */}
         <input type="text" placeholder="Rechercher par nom" value={searchQuery} onChange={handleSearchChange} />
 
-        <button onClick={toggleMoreFilters}>
+        <button onClick={toggleMoreFilters} type="button">
           {showMoreFilters ? 'Masquer les filtres avancés' : 'Afficher les filtres avancés'}
         </button>
         {showMoreFilters && (

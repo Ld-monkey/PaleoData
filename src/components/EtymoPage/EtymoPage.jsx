@@ -12,10 +12,17 @@ function EtymoPage() {
     { root: 'pter-', meaning: 'aile' },
     { root: '-ceratops', meaning: 'visage cornu' },
     { root: '-dactyl', meaning: 'doigt' },
-    { root: 'titan', meaning: 'géant' },
+    { root: '-titan-', meaning: 'géant' },
     { root: '-raptor', meaning: 'voleur' },
     { root: '-mimus', meaning: 'imitateur' },
     { root: 'ornitho-', meaning: 'oiseau' },
+    { root: '-pleur-', meaning: 'côté' },
+    { root: '-arthro-', meaning: 'articulé' },
+    { root: '-avis', meaning: 'oiseau' },
+    { root: '-cheirus', meaning: 'main' },
+    { root: '-archus', meaning: 'maître' },
+    { root: '-long', meaning: 'dragon' },
+    { root: '-cera-', meaning: 'corne' },
   ];
 
   etymologyData.sort((a, b) => a.root.replace('-', '').localeCompare(b.root.replace('-', '')));
